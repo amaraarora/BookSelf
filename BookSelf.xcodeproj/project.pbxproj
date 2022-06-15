@@ -17,6 +17,7 @@
 		090A36CF2857906D0082BAAB /* BookSelfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36CE2857906D0082BAAB /* BookSelfTests.swift */; };
 		090A36D92857906D0082BAAB /* BookSelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36D82857906D0082BAAB /* BookSelfUITests.swift */; };
 		090A36DB2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36DA2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift */; };
+		78CEAD162859E8F800207DF2 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 78CEAD152859E8F700207DF2 /* Font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		090A36D42857906D0082BAAB /* BookSelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A36D82857906D0082BAAB /* BookSelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelfUITests.swift; sourceTree = "<group>"; };
 		090A36DA2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelfUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78CEAD152859E8F700207DF2 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				090A36C02857906D0082BAAB /* Assets.xcassets */,
 				090A36C22857906D0082BAAB /* LaunchScreen.storyboard */,
 				090A36C52857906D0082BAAB /* Info.plist */,
+				78CEAD152859E8F700207DF2 /* Font */,
 				090A36BD285790690082BAAB /* BookSelf.xcdatamodeld */,
 			);
 			path = BookSelf;
@@ -237,6 +240,7 @@
 				090A36C42857906D0082BAAB /* LaunchScreen.storyboard in Resources */,
 				090A36C12857906D0082BAAB /* Assets.xcassets in Resources */,
 				090A36BC285790690082BAAB /* Main.storyboard in Resources */,
+				78CEAD162859E8F800207DF2 /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
