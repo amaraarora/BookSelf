@@ -1,25 +1,17 @@
 //
-//  English Core topics ViewController.swift
+//  apps ViewController.swift
 //  BookSelf
 //
-//  Created by Amara Arora on 16/06/22.
+//  Created by Amara Arora on 17/06/22.
 //
 
 import UIKit
 
-class English_Core_topics_ViewController: UIViewController {
+class apps_ViewController: UIViewController {
 
-  
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
-        
-        
-        
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     

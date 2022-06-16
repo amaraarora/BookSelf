@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,6 +14,82 @@
         </array>
     </customFonts>
     <scenes>
+        <!--rant -->
+        <scene sceneID="E62-1V-5WN">
+            <objects>
+                <viewController title="rant " id="nBv-mI-6nE" customClass="rant_ViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DgS-0l-nqI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rant Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-ef-JPP">
+                                <rect key="frame" x="30" y="68" width="204" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-7n-Thn">
+                                <rect key="frame" x="30" y="115" width="188" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="← Back to Home">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hv2-x6-E3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="t8k-d4-nLJ">
+                                <rect key="frame" x="31" y="162" width="353" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rant about Studies or Anything Here. This is your Safe Space.">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="usA-tz-C0b">
+                                <rect key="frame" x="31" y="287" width="353" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt9-dA-3cv">
+                                <rect key="frame" x="133" y="671" width="137" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="delete"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="nBv-mI-6nE" eventType="touchUpInside" id="DCz-SU-HoK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tbS-Mx-NKd"/>
+                        <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ois-mT-BEp"/>
+                    <connections>
+                        <outlet property="deleteButton" destination="Lt9-dA-3cv" id="R5Y-Jt-Le6"/>
+                        <outlet property="journalText" destination="usA-tz-C0b" id="fFe-oD-ETd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsh-PD-Kgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1295.6521739130435" y="-464.0625"/>
+        </scene>
         <!-- VC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -56,11 +133,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Notes →" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="filled" title="Rant Area →" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nBv-mI-6nE" kind="show" id="5Kv-MN-8Fl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va6-8v-71R">
                                 <rect key="frame" x="234" y="218" width="124" height="48"/>
@@ -71,7 +151,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="English">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -93,7 +173,7 @@
                                         <fragment content="Physics">
                                             <attributes>
                                                 <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -114,7 +194,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Chemistry">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -135,7 +215,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Economics">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -168,7 +248,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Mathematics">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -190,6 +270,9 @@
                                     <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hA8-qX-NGJ" kind="show" id="DFi-gc-lh9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-kn-q9J">
                                 <rect key="frame" x="57" y="532" width="301" height="108"/>
@@ -442,7 +525,7 @@ Geometry
 Probability</string>
                                         <attributes>
                                             <color key="NSColor" red="0.35685196520000001" green="0.60000312330000005" blue="0.91372090579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="MontserratRoman-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -511,7 +594,7 @@ Topology
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="24" name="MontserratRoman-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1019,7 +1102,7 @@ Quantum mechanics
                                     <segue destination="6x6-OL-QBq" kind="show" id="aCB-Ih-PCz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-fh-otj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-fh-otj">
                                 <rect key="frame" x="20" y="257" width="382" height="384"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Acids, Bases, and pH
@@ -1418,7 +1501,7 @@ Advanced Database Systems
                                     <segue destination="PvO-fR-Clx" kind="show" id="vEu-a5-AUZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i39-ZK-Edu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i39-ZK-Edu">
                                 <rect key="frame" x="12" y="269" width="382" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Remote Sensing and Geographic Information Systems.
@@ -2062,7 +2145,7 @@ Waves and signs theory
 Colonization
 Decolonization
 World wars
-Redrawing of national boundaries
+Redrawing of  National boundaries
 Political philosophies 
 
 </string>
@@ -2599,7 +2682,7 @@ Natural Disasters &amp; Environment
                                         <fragment content="Indoor →                                      ">
                                             <attributes>
                                                 <color key="NSColor" red="0.40000003579999999" green="0.58039218189999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="20" name="MontserratRoman-SemiBold"/>
+                                                <font key="NSFont" metaFont="system" size="20"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -2653,11 +2736,11 @@ Natural Disasters &amp; Environment
                                 <rect key="frame" x="202" y="199" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-72-mPT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Female-kayaking-in-cavernous-river" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-72-mPT">
                                 <rect key="frame" x="202" y="389" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indoor-activities-for-preschoolers-865x577" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Jy-eDk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coursws" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Jy-eDk">
                                 <rect key="frame" x="202" y="583" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -2726,7 +2809,7 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="IHb-aA-xQ8"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="CSV-fV-e9H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxP-ec-2al">
@@ -3142,10 +3225,10 @@ Natural Disasters &amp; Environment
             </objects>
             <point key="canvasLocation" x="5629" y="751"/>
         </scene>
-        <!--View Controller-->
+        <!--questions VC-->
         <scene sceneID="mnq-gT-N8X">
             <objects>
-                <viewController id="CUy-Bj-nqE" sceneMemberID="viewController">
+                <viewController title="questions VC" id="CUy-Bj-nqE" customClass="questions_ViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4dB-34-bdi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3167,7 +3250,7 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hA8-qX-NGJ" kind="show" id="pad-dJ-azG"/>
+                                    <segue destination="hA8-qX-NGJ" kind="show" id="dMx-Vq-vdx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-1X-ywi">
@@ -3290,10 +3373,10 @@ Natural Disasters &amp; Environment
             </objects>
             <point key="canvasLocation" x="1065" y="1658"/>
         </scene>
-        <!--View Controller-->
+        <!--apps VC-->
         <scene sceneID="tlv-7Z-WRD">
             <objects>
-                <viewController id="xjL-tX-p3z" sceneMemberID="viewController">
+                <viewController title="apps VC" id="xjL-tX-p3z" customClass="apps_ViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jeg-kA-UxA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3315,7 +3398,7 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hA8-qX-NGJ" kind="show" id="v14-YO-r6S"/>
+                                    <segue destination="hA8-qX-NGJ" kind="show" id="Q3T-sN-6O0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3427,7 +3510,7 @@ Elasticities
                                 <rect key="frame" x="26" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-0r-MOi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-0r-MOi">
                                 <rect key="frame" x="16" y="238" width="382" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Calculations 
@@ -3978,22 +4061,23 @@ Histology
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pad-dJ-azG"/>
-        <segue reference="olU-MA-lvU"/>
-        <segue reference="AC0-ts-e5k"/>
+        <segue reference="Q3T-sN-6O0"/>
+        <segue reference="L7E-IZ-zrQ"/>
+        <segue reference="S26-MA-U6P"/>
         <segue reference="04c-QU-oOS"/>
         <segue reference="b3T-ah-eTX"/>
-        <segue reference="wiU-yf-02u"/>
-        <segue reference="qNX-PQ-duf"/>
+        <segue reference="Hci-yt-RTY"/>
+        <segue reference="vEu-a5-AUZ"/>
         <segue reference="bUB-Gc-2Vr"/>
-        <segue reference="c5H-lZ-ExW"/>
+        <segue reference="aCB-Ih-PCz"/>
         <segue reference="Ul5-xJ-WYF"/>
         <segue reference="lcT-Ho-kzx"/>
-        <segue reference="nWY-j8-gvK"/>
-        <segue reference="9uO-zi-LH9"/>
-        <segue reference="4Og-tr-deB"/>
+        <segue reference="1qM-Nq-ige"/>
+        <segue reference="3Au-QX-dGw"/>
+        <segue reference="Hv2-x6-E3a"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Female-kayaking-in-cavernous-river" width="1109" height="614"/>
         <image name="adv bio" width="571" height="316"/>
         <image name="adv chem-1" width="740" height="416"/>
         <image name="adv cs" width="636" height="315"/>
@@ -4013,10 +4097,17 @@ Histology
         <image name="core his" width="768" height="480"/>
         <image name="core math" width="451" height="297"/>
         <image name="core physics" width="1280" height="853"/>
+        <image name="coursws" width="880" height="550"/>
         <image name="indoor-activities-for-preschoolers-865x577" width="865" height="577"/>
         <image name="pattern" width="1080" height="1080"/>
         <image name="pattern (1)" width="1080" height="1080"/>
         <image name="pattern (2)" width="1080" height="1080"/>
         <image name="skills" width="777" height="437"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

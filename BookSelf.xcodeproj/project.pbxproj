@@ -46,6 +46,9 @@
 		096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */; };
 		096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */; };
 		096AC685285B0E5C003E64FB /* com sci advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */; };
+		09A3AF9C285BAF61000EA705 /* rant ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A3AF9B285BAF61000EA705 /* rant ViewController.swift */; };
+		09A3AF9E285BB10C000EA705 /* questions ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A3AF9D285BB10C000EA705 /* questions ViewController.swift */; };
+		09A3AFA0285BB117000EA705 /* apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A3AF9F285BB117000EA705 /* apps ViewController.swift */; };
 		78200F1A285B6FE0003BF530 /* compSciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78200F19285B6FE0003BF530 /* compSciViewController.swift */; };
 		78200F20285B842B003BF530 /* activitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78200F1F285B842B003BF530 /* activitiesViewController.swift */; };
 		78960885285B44A800004AEA /* outdoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78960884285B44A800004AEA /* outdoorViewController.swift */; };
@@ -115,6 +118,9 @@
 		096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics advanced topics  ViewController.swift"; sourceTree = "<group>"; };
 		096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci core topics ViewController.swift"; sourceTree = "<group>"; };
 		096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci advanced topics ViewController.swift"; sourceTree = "<group>"; };
+		09A3AF9B285BAF61000EA705 /* rant ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rant ViewController.swift"; sourceTree = "<group>"; };
+		09A3AF9D285BB10C000EA705 /* questions ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "questions ViewController.swift"; sourceTree = "<group>"; };
+		09A3AF9F285BB117000EA705 /* apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apps ViewController.swift"; sourceTree = "<group>"; };
 		78200F19285B6FE0003BF530 /* compSciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compSciViewController.swift; sourceTree = "<group>"; };
 		78200F1F285B842B003BF530 /* activitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitiesViewController.swift; sourceTree = "<group>"; };
 		78960884285B44A800004AEA /* outdoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outdoorViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +157,9 @@
 		090A36A8285790690082BAAB = {
 			isa = PBXGroup;
 			children = (
+				09A3AF9D285BB10C000EA705 /* questions ViewController.swift */,
+				09A3AF9F285BB117000EA705 /* apps ViewController.swift */,
+				09A3AF9B285BAF61000EA705 /* rant ViewController.swift */,
 				78200F1F285B842B003BF530 /* activitiesViewController.swift */,
 				78200F19285B6FE0003BF530 /* compSciViewController.swift */,
 				78960884285B44A800004AEA /* outdoorViewController.swift */,
@@ -402,9 +411,12 @@
 				096AC657285A61C4003E64FB /* English AppsViewController.swift in Sources */,
 				096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */,
 				090A36B7285790690082BAAB /* SceneDelegate.swift in Sources */,
+				09A3AF9E285BB10C000EA705 /* questions ViewController.swift in Sources */,
 				096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */,
 				096AC65B285A61FD003E64FB /* Chem VCViewController.swift in Sources */,
+				09A3AFA0285BB117000EA705 /* apps ViewController.swift in Sources */,
 				096AC66F285A62C2003E64FB /* Biology ViewController.swift in Sources */,
+				09A3AF9C285BAF61000EA705 /* rant ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
