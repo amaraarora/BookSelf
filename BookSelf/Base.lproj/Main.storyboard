@@ -9,6 +9,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Montserrat-VariableFont_wght.ttf">
+            <string>MontserratRoman-Bold</string>
             <string>MontserratRoman-SemiBold</string>
         </array>
     </customFonts>
@@ -21,65 +22,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blh-IZ-ekN">
-                                <rect key="frame" x="45" y="65" width="228" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blh-IZ-ekN">
+                                <rect key="frame" x="46" y="67" width="228" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome to">
-                                        <attributes>
-                                            <color key="NSColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="32"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="MontserratRoman-Bold" family="Montserrat" pointSize="32"/>
+                                <color key="textColor" red="0.40000003579999999" green="0.58039218189999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-ka-bMv">
-                                <rect key="frame" x="45" y="104" width="208" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BookSelf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-ka-bMv">
+                                <rect key="frame" x="48" y="104" width="208" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="BookSelf">
-                                        <attributes>
-                                            <color key="NSColor" red="0.35685196520000001" green="0.60000312330000005" blue="0.91372090579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="40"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ju6-6l-zhd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subjects " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ju6-6l-zhd">
                                 <rect key="frame" x="57" y="169" width="176" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Subjects ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="24"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQH-fC-rWd">
-                                <rect key="frame" x="57" y="218" width="169" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Mathematics">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-8x-aj6">
                                 <rect key="frame" x="57" y="399" width="301" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -193,21 +157,31 @@
                                 <rect key="frame" x="264" y="172" width="94" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="more →">
-                                            <attributes>
-                                                <color key="NSColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="more →">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="oxB-Da-mlt" kind="show" id="29e-7R-pac"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-PF-lPo">
+                                <rect key="frame" x="57" y="218" width="169" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Mathematics">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -227,33 +201,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py3-eA-fep">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subjects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py3-eA-fep">
                                 <rect key="frame" x="53" y="55" width="178" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Subjects">
-                                        <attributes>
-                                            <color key="NSColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="40"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0S-7e-dcS">
                                 <rect key="frame" x="36" y="100" width="194" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="←  Back to Home">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="20"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="←  Back to Home">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -403,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKs-D7-9Xl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768" y="-277"/>
+            <point key="canvasLocation" x="1310" y="-225"/>
         </scene>
         <!--Math Advanced topics-->
         <scene sceneID="Sda-ke-Lyg">
@@ -496,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eur-zT-eVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366.6666666666667" y="-963.61607142857133"/>
+            <point key="canvasLocation" x="741" y="-1698"/>
         </scene>
         <!--Math core topics-->
         <scene sceneID="vDV-Qr-wcn">
@@ -598,7 +559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icK-JP-QCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093" y="-1258"/>
+            <point key="canvasLocation" x="1388" y="-1698"/>
         </scene>
         <!--Math VC-->
         <scene sceneID="io7-oH-82U">
@@ -676,7 +637,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP1-dh-G29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2763" y="-691"/>
+            <point key="canvasLocation" x="741" y="-1017"/>
         </scene>
         <!--English VC-->
         <scene sceneID="p9h-hV-btL">
@@ -754,7 +715,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0T-O7-yzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3516" y="-687"/>
+            <point key="canvasLocation" x="2835" y="-1906"/>
         </scene>
         <!--Physics VC-->
         <scene sceneID="JUC-LO-rEA">
@@ -832,7 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vt-Fh-cBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4226" y="-687"/>
+            <point key="canvasLocation" x="4783" y="-1906"/>
         </scene>
         <!--Chem VC-->
         <scene sceneID="1z6-Fi-djY">
@@ -910,7 +871,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W47-So-uRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4933" y="-687"/>
+            <point key="canvasLocation" x="7148" y="-1063"/>
         </scene>
         <!--Chemistry Core topics-->
         <scene sceneID="Rlf-m7-xIm">
@@ -1000,7 +961,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8M-Fb-IRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5671" y="-666"/>
+            <point key="canvasLocation" x="7148" y="-1724"/>
         </scene>
         <!--Chemistry Advanced topics-->
         <scene sceneID="99g-Yi-HsW">
@@ -1090,7 +1051,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vI-ji-vt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6340.579710144928" y="-665.625"/>
+            <point key="canvasLocation" x="7861" y="-1724"/>
         </scene>
         <!--Com sci core topics-->
         <scene sceneID="f7K-7Y-vDx">
@@ -1180,7 +1141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwP-xe-Uat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7257.971014492754" y="-1012.5"/>
+            <point key="canvasLocation" x="9728" y="-1049"/>
         </scene>
         <!--Com sci advanced topics-->
         <scene sceneID="Xjp-d6-6gX">
@@ -1270,7 +1231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kM8-qb-uvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7992.753623188406" y="-971.65178571428567"/>
+            <point key="canvasLocation" x="10464" y="-1049"/>
         </scene>
         <!--CS VC-->
         <scene sceneID="X2v-fd-swd">
@@ -1348,7 +1309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgY-jn-6eE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7047.826086956522" y="-338.16964285714283"/>
+            <point key="canvasLocation" x="9728" y="-415"/>
         </scene>
         <!--ES VC-->
         <scene sceneID="N6z-QE-BeS">
@@ -1768,7 +1729,7 @@
         <!--Indoor VC-->
         <scene sceneID="yBP-6e-8ci">
             <objects>
-                <viewController title="Indoor VC" id="HjS-pf-FVe" sceneMemberID="viewController">
+                <viewController title="Indoor VC" id="HjS-pf-FVe" customClass="indoorViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnl-qm-97S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1793,6 +1754,135 @@
                                     <segue destination="1OP-6e-qMN" kind="show" id="WE4-hv-W0l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUc-gz-8T9">
+                                <rect key="frame" x="60" y="166" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tarot Reading" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Kt2-UJ-vPm"/>
+                                    <action selector="tarot:" destination="HjS-pf-FVe" eventType="touchUpInside" id="5RW-Gv-ThL"/>
+                                    <action selector="tarot:" destination="jN6-ka-L6E" eventType="touchUpInside" id="ogQ-1A-bZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7U-Ip-g7S">
+                                <rect key="frame" x="60" y="244" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Solitaire" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="y64-Ju-jrY"/>
+                                    <action selector="solitair:" destination="jN6-ka-L6E" eventType="touchUpInside" id="qf7-rW-lbY"/>
+                                    <action selector="solitaire:" destination="jN6-ka-L6E" eventType="touchUpInside" id="n23-jd-eOM"/>
+                                    <action selector="solitaire:" destination="HjS-pf-FVe" eventType="touchUpInside" id="vCM-cG-T6H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxt-J2-pPA">
+                                <rect key="frame" x="60" y="322" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mancala" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mancala:" destination="jN6-ka-L6E" eventType="touchUpInside" id="OTk-9x-r3U"/>
+                                    <action selector="mancala:" destination="HjS-pf-FVe" eventType="touchUpInside" id="PSe-9A-yGH"/>
+                                    <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="SrH-zY-Jh0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-98-8R3">
+                                <rect key="frame" x="60" y="400" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Chess" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chess:" destination="jN6-ka-L6E" eventType="touchUpInside" id="Zvv-Kn-yjr"/>
+                                    <action selector="chess:" destination="HjS-pf-FVe" eventType="touchUpInside" id="yUB-Wf-EKj"/>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Fge-L2-UJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4F-5Z-xeW">
+                                <rect key="frame" x="60" y="478" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Snake Game" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="mtf-h5-bek"/>
+                                    <action selector="snake:" destination="jN6-ka-L6E" eventType="touchUpInside" id="Qic-BY-CdI"/>
+                                    <action selector="snake:" destination="HjS-pf-FVe" eventType="touchUpInside" id="vX7-sI-Rx7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ske-To-QIE">
+                                <rect key="frame" x="60" y="556" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PacMan" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pacman:" destination="jN6-ka-L6E" eventType="touchUpInside" id="5uV-IK-eVn"/>
+                                    <action selector="pacman:" destination="HjS-pf-FVe" eventType="touchUpInside" id="8rh-xH-tx4"/>
+                                    <action selector="skillShare:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="F2c-wu-qST"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhw-xp-2gz">
+                                <rect key="frame" x="60" y="634" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Minesweeper" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="freeCodeCamp:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="wE9-up-BE8"/>
+                                    <action selector="mine:" destination="jN6-ka-L6E" eventType="touchUpInside" id="tOe-e2-D4I"/>
+                                    <action selector="minesweeper:" destination="HjS-pf-FVe" eventType="touchUpInside" id="Ip4-G2-emf"/>
+                                    <action selector="minesweeper:" destination="jN6-ka-L6E" eventType="touchUpInside" id="zs1-Hs-3Wj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc9-EM-aKc">
+                                <rect key="frame" x="60" y="712" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="monkeytype" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="investGirls:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="pOa-AS-vMZ"/>
+                                    <action selector="monkey:" destination="jN6-ka-L6E" eventType="touchUpInside" id="Svp-Oo-wzy"/>
+                                    <action selector="monkeytype:" destination="jN6-ka-L6E" eventType="touchUpInside" id="959-WS-g6K"/>
+                                    <action selector="monkeytype:" destination="HjS-pf-FVe" eventType="touchUpInside" id="ya5-H6-kaa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bD-sX-T3T"/>
                         <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1800,13 +1890,14 @@
                     <navigationItem key="navigationItem" id="wa7-cL-vge"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX2-YG-4eB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jN6-ka-L6E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2177" y="1873"/>
         </scene>
         <!--Outdoor VC-->
         <scene sceneID="yAb-Tu-gXR">
             <objects>
-                <viewController title="Outdoor VC" id="eRQ-cz-kJL" sceneMemberID="viewController">
+                <viewController title="Outdoor VC" id="eRQ-cz-kJL" customClass="outdoorViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPc-7b-Kji">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1831,6 +1922,82 @@
                                     <segue destination="1OP-6e-qMN" kind="show" id="L7E-IZ-zrQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbq-1r-ahK">
+                                <rect key="frame" x="87" y="168" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Swimming" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="JuG-fl-lEj"/>
+                                    <action selector="swim:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="erR-2b-mPj"/>
+                                    <action selector="swimming:" destination="vN0-YB-jne" eventType="touchUpInside" id="sIw-8r-OhZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-UL-vgm">
+                                <rect key="frame" x="87" y="289" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Outdoor Painting" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="cLr-Rw-hdZ"/>
+                                    <action selector="outPainting:" destination="vN0-YB-jne" eventType="touchUpInside" id="frl-k6-ogc"/>
+                                    <action selector="paint:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="Se6-3c-wa8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDr-WX-t8F">
+                                <rect key="frame" x="87" y="412" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Gardening" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="garden:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="gbk-O6-QTj"/>
+                                    <action selector="gardening:" destination="vN0-YB-jne" eventType="touchUpInside" id="gtM-s7-3YO"/>
+                                    <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="mLj-cw-j8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNs-el-Qk8">
+                                <rect key="frame" x="87" y="537" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Yoga" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="M1c-EK-TCo"/>
+                                    <action selector="yoga:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="yEK-4h-uYh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaE-Sf-VGx">
+                                <rect key="frame" x="87" y="657" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hydroponic" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="uyk-Cf-AcY"/>
+                                    <action selector="hydro:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="njD-Y9-HqP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yiP-b3-nzd"/>
                         <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1838,13 +2005,14 @@
                     <navigationItem key="navigationItem" id="uza-hG-PXF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oit-B5-RSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vN0-YB-jne" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1378" y="1873"/>
         </scene>
         <!--Courses VC-->
         <scene sceneID="K8G-Wh-50L">
             <objects>
-                <viewController title="Courses VC" id="Fe3-qJ-swj" sceneMemberID="viewController">
+                <viewController title="Courses VC" id="Fe3-qJ-swj" customClass="CoursesViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VAm-8F-tZa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1867,6 +2035,116 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="1OP-6e-qMN" kind="show" id="olU-MA-lvU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OID-3e-EvQ">
+                                <rect key="frame" x="87" y="155" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kode with Klossy" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="QqY-Ey-rXp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-Ha-MPI">
+                                <rect key="frame" x="87" y="233" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Girls who Code" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="vq0-ir-m2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15V-Jb-QqG">
+                                <rect key="frame" x="87" y="311" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Udemy" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="JBM-wK-lcl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-eq-8SK">
+                                <rect key="frame" x="87" y="389" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="edX" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="iBM-HC-F5l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWE-BW-NGq">
+                                <rect key="frame" x="87" y="467" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Codecademy" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="qsB-aq-qOp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l90-aC-zRo">
+                                <rect key="frame" x="87" y="545" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Skillshare" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skillShare:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="2JI-ff-mob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MD-1P-P7g">
+                                <rect key="frame" x="87" y="623" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="freeCodeCamp" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="freeCodeCamp:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="t8n-4d-cQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qou-sD-Ugg">
+                                <rect key="frame" x="87" y="701" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Invest In Girls" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="investGirls:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="SKC-Al-67t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2523,7 +2801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vu8-CU-Yea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="-1509"/>
+            <point key="canvasLocation" x="1387" y="-1017"/>
         </scene>
         <!--Advanced topics English-->
         <scene sceneID="7wj-17-Klk">
@@ -2618,7 +2896,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRc-oz-ApU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834.7826086956525" y="-2172.3214285714284"/>
+            <point key="canvasLocation" x="2835" y="-2571"/>
         </scene>
         <!--English Core topics-->
         <scene sceneID="B5r-xa-shU">
@@ -2714,7 +2992,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkX-lM-PAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3515.9420289855075" y="-2173.6607142857142"/>
+            <point key="canvasLocation" x="3516" y="-2571"/>
         </scene>
         <!--Physics Core topics-->
         <scene sceneID="8Rt-Z6-IIj">
@@ -2804,7 +3082,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVE-0p-3qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4205.7971014492759" y="-2182.3660714285711"/>
+            <point key="canvasLocation" x="4784" y="-2571"/>
         </scene>
         <!--Physics Advanced topics-->
         <scene sceneID="Za3-QC-AMp">
@@ -2890,7 +3168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoP-Cj-28u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939.130434782609" y="-2172.3214285714284"/>
+            <point key="canvasLocation" x="5491" y="-2571"/>
         </scene>
         <!--English Apps-->
         <scene sceneID="lRN-Ls-E5R">
@@ -2959,7 +3237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8p-83-Bc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3516" y="-1509"/>
+            <point key="canvasLocation" x="3516" y="-1906"/>
         </scene>
         <!--Physics Apps-->
         <scene sceneID="4DL-ag-6Oe">
@@ -3028,7 +3306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XoJ-pd-mjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4225" y="-1509"/>
+            <point key="canvasLocation" x="5490" y="-1906"/>
         </scene>
         <!--Chem Apps-->
         <scene sceneID="rwP-Oz-3eH">
@@ -3104,7 +3382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAp-Ck-dTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4932" y="-1509"/>
+            <point key="canvasLocation" x="7861" y="-1063"/>
         </scene>
         <!--CS Apps-->
         <scene sceneID="Ez6-Qj-2kp">
@@ -3173,23 +3451,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51f-yM-iJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8000" y="-338"/>
+            <point key="canvasLocation" x="10472" y="-415"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kUB-gG-CNV"/>
-        <segue reference="rta-aX-DQT"/>
+        <segue reference="WE4-hv-W0l"/>
         <segue reference="AC0-ts-e5k"/>
         <segue reference="04c-QU-oOS"/>
         <segue reference="b3T-ah-eTX"/>
         <segue reference="DUW-zL-GWe"/>
         <segue reference="qNX-PQ-duf"/>
-        <segue reference="bCz-xp-bqX"/>
-        <segue reference="z8H-ic-DAb"/>
-        <segue reference="uM8-EJ-1Ye"/>
-        <segue reference="Yq8-Pu-NNd"/>
-        <segue reference="t7t-9w-6Qw"/>
-        <segue reference="a1G-TP-kTO"/>
+        <segue reference="bUB-Gc-2Vr"/>
+        <segue reference="Vkv-Oy-KNi"/>
+        <segue reference="i25-MG-Blp"/>
+        <segue reference="JB5-FL-k4Z"/>
+        <segue reference="vD6-cS-0o6"/>
+        <segue reference="29e-7R-pac"/>
         <segue reference="WCj-PP-y62"/>
     </inferredMetricsTieBreakers>
     <resources>

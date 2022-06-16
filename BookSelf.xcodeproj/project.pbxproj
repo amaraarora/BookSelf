@@ -46,7 +46,10 @@
 		096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */; };
 		096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */; };
 		096AC685285B0E5C003E64FB /* com sci advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */; };
+		78960885285B44A800004AEA /* outdoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78960884285B44A800004AEA /* outdoorViewController.swift */; };
+		78960887285B47DB00004AEA /* indoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78960886285B47DB00004AEA /* indoorViewController.swift */; };
 		78CEAD162859E8F800207DF2 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 78CEAD152859E8F700207DF2 /* Font */; };
+		78D956FF285B3929008B3B6C /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D956FE285B3929008B3B6C /* CoursesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +113,10 @@
 		096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics advanced topics  ViewController.swift"; sourceTree = "<group>"; };
 		096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci core topics ViewController.swift"; sourceTree = "<group>"; };
 		096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci advanced topics ViewController.swift"; sourceTree = "<group>"; };
+		78960884285B44A800004AEA /* outdoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outdoorViewController.swift; sourceTree = "<group>"; };
+		78960886285B47DB00004AEA /* indoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indoorViewController.swift; sourceTree = "<group>"; };
 		78CEAD152859E8F700207DF2 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
+		78D956FE285B3929008B3B6C /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,8 @@
 		090A36A8285790690082BAAB = {
 			isa = PBXGroup;
 			children = (
+				78960884285B44A800004AEA /* outdoorViewController.swift */,
+				78D956FE285B3929008B3B6C /* CoursesViewController.swift */,
 				096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */,
 				096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */,
 				096AC676285B0BFD003E64FB /* English Core topics ViewController.swift */,
@@ -174,6 +182,7 @@
 				090A36B6285790690082BAAB /* SceneDelegate.swift */,
 				090A36B8285790690082BAAB /* ViewController.swift */,
 				090A36BA285790690082BAAB /* Main.storyboard */,
+				78960886285B47DB00004AEA /* indoorViewController.swift */,
 				096AC674285A6320003E64FB /* Math advancec topics ViewController.swift */,
 				096AC672285A630F003E64FB /* Math core topics ViewController.swift */,
 				096AC666285A6292003E64FB /* Psych ViewController.swift */,
@@ -353,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096AC66B285A62AB003E64FB /* History ViewController.swift in Sources */,
+				78960885285B44A800004AEA /* outdoorViewController.swift in Sources */,
 				096AC67D285B0C3F003E64FB /* Chemistry Core topics ViewController.swift in Sources */,
 				096AC669285A629F003E64FB /* Psych  Apps ViewController.swift in Sources */,
 				096AC65F285A6240003E64FB /* ES VCViewController.swift in Sources */,
@@ -373,6 +383,8 @@
 				096AC67B285B0C2B003E64FB /* Physcis Core topics ViewController.swift in Sources */,
 				096AC663285A625C003E64FB /* Economics ViewController.swift in Sources */,
 				096AC675285A6320003E64FB /* Math advancec topics ViewController.swift in Sources */,
+				78D956FF285B3929008B3B6C /* CoursesViewController.swift in Sources */,
+				78960887285B47DB00004AEA /* indoorViewController.swift in Sources */,
 				090A36BF285790690082BAAB /* BookSelf.xcdatamodeld in Sources */,
 				096AC667285A6292003E64FB /* Psych ViewController.swift in Sources */,
 				096AC67F285B0C50003E64FB /* Chemistry advanced topics ViewController.swift in Sources */,
