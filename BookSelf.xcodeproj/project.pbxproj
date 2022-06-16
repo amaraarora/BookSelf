@@ -17,6 +17,35 @@
 		090A36CF2857906D0082BAAB /* BookSelfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36CE2857906D0082BAAB /* BookSelfTests.swift */; };
 		090A36D92857906D0082BAAB /* BookSelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36D82857906D0082BAAB /* BookSelfUITests.swift */; };
 		090A36DB2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A36DA2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift */; };
+		096AC64D285A60F0003E64FB /* MainVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC64C285A60F0003E64FB /* MainVCViewController.swift */; };
+		096AC64F285A614B003E64FB /* Math VC ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC64E285A614B003E64FB /* Math VC ViewController.swift */; };
+		096AC651285A6174003E64FB /* English VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC650285A6174003E64FB /* English VCViewController.swift */; };
+		096AC653285A6186003E64FB /* Physics VC ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC652285A6186003E64FB /* Physics VC ViewController.swift */; };
+		096AC655285A61A6003E64FB /* Math AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC654285A61A6003E64FB /* Math AppsViewController.swift */; };
+		096AC657285A61C4003E64FB /* English AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC656285A61C4003E64FB /* English AppsViewController.swift */; };
+		096AC659285A61E1003E64FB /* Physics Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC658285A61E1003E64FB /* Physics Apps ViewController.swift */; };
+		096AC65B285A61FD003E64FB /* Chem VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC65A285A61FD003E64FB /* Chem VCViewController.swift */; };
+		096AC65D285A6212003E64FB /* Chem Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC65C285A6212003E64FB /* Chem Apps ViewController.swift */; };
+		096AC65F285A6240003E64FB /* ES VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC65E285A6240003E64FB /* ES VCViewController.swift */; };
+		096AC661285A624C003E64FB /* ES Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC660285A624C003E64FB /* ES Apps ViewController.swift */; };
+		096AC663285A625C003E64FB /* Economics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC662285A625C003E64FB /* Economics ViewController.swift */; };
+		096AC665285A6267003E64FB /* Economics Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC664285A6267003E64FB /* Economics Apps ViewController.swift */; };
+		096AC667285A6292003E64FB /* Psych ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC666285A6292003E64FB /* Psych ViewController.swift */; };
+		096AC669285A629F003E64FB /* Psych  Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC668285A629F003E64FB /* Psych  Apps ViewController.swift */; };
+		096AC66B285A62AB003E64FB /* History ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC66A285A62AB003E64FB /* History ViewController.swift */; };
+		096AC66D285A62B6003E64FB /* History Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC66C285A62B6003E64FB /* History Apps ViewController.swift */; };
+		096AC66F285A62C2003E64FB /* Biology ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC66E285A62C2003E64FB /* Biology ViewController.swift */; };
+		096AC671285A62CE003E64FB /* Biology  Apps ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC670285A62CE003E64FB /* Biology  Apps ViewController.swift */; };
+		096AC673285A630F003E64FB /* Math core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC672285A630F003E64FB /* Math core topics ViewController.swift */; };
+		096AC675285A6320003E64FB /* Math advancec topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC674285A6320003E64FB /* Math advancec topics ViewController.swift */; };
+		096AC677285B0BFD003E64FB /* English Core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC676285B0BFD003E64FB /* English Core topics ViewController.swift */; };
+		096AC679285B0C16003E64FB /* English advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC678285B0C16003E64FB /* English advanced topics ViewController.swift */; };
+		096AC67B285B0C2B003E64FB /* Physcis Core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC67A285B0C2B003E64FB /* Physcis Core topics ViewController.swift */; };
+		096AC67D285B0C3F003E64FB /* Chemistry Core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC67C285B0C3F003E64FB /* Chemistry Core topics ViewController.swift */; };
+		096AC67F285B0C50003E64FB /* Chemistry advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC67E285B0C50003E64FB /* Chemistry advanced topics ViewController.swift */; };
+		096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */; };
+		096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */; };
+		096AC685285B0E5C003E64FB /* com sci advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */; };
 		78CEAD162859E8F800207DF2 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 78CEAD152859E8F700207DF2 /* Font */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +81,35 @@
 		090A36D42857906D0082BAAB /* BookSelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A36D82857906D0082BAAB /* BookSelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelfUITests.swift; sourceTree = "<group>"; };
 		090A36DA2857906D0082BAAB /* BookSelfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelfUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		096AC64C285A60F0003E64FB /* MainVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCViewController.swift; sourceTree = "<group>"; };
+		096AC64E285A614B003E64FB /* Math VC ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math VC ViewController.swift"; sourceTree = "<group>"; };
+		096AC650285A6174003E64FB /* English VCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English VCViewController.swift"; sourceTree = "<group>"; };
+		096AC652285A6186003E64FB /* Physics VC ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics VC ViewController.swift"; sourceTree = "<group>"; };
+		096AC654285A61A6003E64FB /* Math AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math AppsViewController.swift"; sourceTree = "<group>"; };
+		096AC656285A61C4003E64FB /* English AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English AppsViewController.swift"; sourceTree = "<group>"; };
+		096AC658285A61E1003E64FB /* Physics Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC65A285A61FD003E64FB /* Chem VCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chem VCViewController.swift"; sourceTree = "<group>"; };
+		096AC65C285A6212003E64FB /* Chem Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chem Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC65E285A6240003E64FB /* ES VCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ES VCViewController.swift"; sourceTree = "<group>"; };
+		096AC660285A624C003E64FB /* ES Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ES Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC662285A625C003E64FB /* Economics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Economics ViewController.swift"; sourceTree = "<group>"; };
+		096AC664285A6267003E64FB /* Economics Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Economics Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC666285A6292003E64FB /* Psych ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Psych ViewController.swift"; sourceTree = "<group>"; };
+		096AC668285A629F003E64FB /* Psych  Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Psych  Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC66A285A62AB003E64FB /* History ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History ViewController.swift"; sourceTree = "<group>"; };
+		096AC66C285A62B6003E64FB /* History Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC66E285A62C2003E64FB /* Biology ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Biology ViewController.swift"; sourceTree = "<group>"; };
+		096AC670285A62CE003E64FB /* Biology  Apps ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Biology  Apps ViewController.swift"; sourceTree = "<group>"; };
+		096AC672285A630F003E64FB /* Math core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math core topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC674285A6320003E64FB /* Math advancec topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math advancec topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC676285B0BFD003E64FB /* English Core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English Core topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC678285B0C16003E64FB /* English advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English advanced topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC67A285B0C2B003E64FB /* Physcis Core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physcis Core topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC67C285B0C3F003E64FB /* Chemistry Core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chemistry Core topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC67E285B0C50003E64FB /* Chemistry advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chemistry advanced topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics advanced topics  ViewController.swift"; sourceTree = "<group>"; };
+		096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci core topics ViewController.swift"; sourceTree = "<group>"; };
+		096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci advanced topics ViewController.swift"; sourceTree = "<group>"; };
 		78CEAD152859E8F700207DF2 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +141,15 @@
 		090A36A8285790690082BAAB = {
 			isa = PBXGroup;
 			children = (
+				096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */,
+				096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */,
+				096AC676285B0BFD003E64FB /* English Core topics ViewController.swift */,
+				096AC678285B0C16003E64FB /* English advanced topics ViewController.swift */,
+				096AC67A285B0C2B003E64FB /* Physcis Core topics ViewController.swift */,
+				096AC67C285B0C3F003E64FB /* Chemistry Core topics ViewController.swift */,
+				096AC67E285B0C50003E64FB /* Chemistry advanced topics ViewController.swift */,
+				096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */,
+				096AC64C285A60F0003E64FB /* MainVCViewController.swift */,
 				090A36B3285790690082BAAB /* BookSelf */,
 				090A36CD2857906D0082BAAB /* BookSelfTests */,
 				090A36D72857906D0082BAAB /* BookSelfUITests */,
@@ -107,6 +174,26 @@
 				090A36B6285790690082BAAB /* SceneDelegate.swift */,
 				090A36B8285790690082BAAB /* ViewController.swift */,
 				090A36BA285790690082BAAB /* Main.storyboard */,
+				096AC674285A6320003E64FB /* Math advancec topics ViewController.swift */,
+				096AC672285A630F003E64FB /* Math core topics ViewController.swift */,
+				096AC666285A6292003E64FB /* Psych ViewController.swift */,
+				096AC668285A629F003E64FB /* Psych  Apps ViewController.swift */,
+				096AC66A285A62AB003E64FB /* History ViewController.swift */,
+				096AC66C285A62B6003E64FB /* History Apps ViewController.swift */,
+				096AC66E285A62C2003E64FB /* Biology ViewController.swift */,
+				096AC670285A62CE003E64FB /* Biology  Apps ViewController.swift */,
+				096AC65E285A6240003E64FB /* ES VCViewController.swift */,
+				096AC660285A624C003E64FB /* ES Apps ViewController.swift */,
+				096AC662285A625C003E64FB /* Economics ViewController.swift */,
+				096AC664285A6267003E64FB /* Economics Apps ViewController.swift */,
+				096AC65C285A6212003E64FB /* Chem Apps ViewController.swift */,
+				096AC65A285A61FD003E64FB /* Chem VCViewController.swift */,
+				096AC658285A61E1003E64FB /* Physics Apps ViewController.swift */,
+				096AC656285A61C4003E64FB /* English AppsViewController.swift */,
+				096AC654285A61A6003E64FB /* Math AppsViewController.swift */,
+				096AC652285A6186003E64FB /* Physics VC ViewController.swift */,
+				096AC650285A6174003E64FB /* English VCViewController.swift */,
+				096AC64E285A614B003E64FB /* Math VC ViewController.swift */,
 				090A36C02857906D0082BAAB /* Assets.xcassets */,
 				090A36C22857906D0082BAAB /* LaunchScreen.storyboard */,
 				090A36C52857906D0082BAAB /* Info.plist */,
@@ -265,10 +352,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096AC66B285A62AB003E64FB /* History ViewController.swift in Sources */,
+				096AC67D285B0C3F003E64FB /* Chemistry Core topics ViewController.swift in Sources */,
+				096AC669285A629F003E64FB /* Psych  Apps ViewController.swift in Sources */,
+				096AC65F285A6240003E64FB /* ES VCViewController.swift in Sources */,
+				096AC665285A6267003E64FB /* Economics Apps ViewController.swift in Sources */,
+				096AC661285A624C003E64FB /* ES Apps ViewController.swift in Sources */,
+				096AC677285B0BFD003E64FB /* English Core topics ViewController.swift in Sources */,
+				096AC685285B0E5C003E64FB /* com sci advanced topics ViewController.swift in Sources */,
+				096AC64D285A60F0003E64FB /* MainVCViewController.swift in Sources */,
 				090A36B9285790690082BAAB /* ViewController.swift in Sources */,
+				096AC671285A62CE003E64FB /* Biology  Apps ViewController.swift in Sources */,
 				090A36B5285790690082BAAB /* AppDelegate.swift in Sources */,
+				096AC64F285A614B003E64FB /* Math VC ViewController.swift in Sources */,
+				096AC655285A61A6003E64FB /* Math AppsViewController.swift in Sources */,
+				096AC66D285A62B6003E64FB /* History Apps ViewController.swift in Sources */,
+				096AC673285A630F003E64FB /* Math core topics ViewController.swift in Sources */,
+				096AC65D285A6212003E64FB /* Chem Apps ViewController.swift in Sources */,
+				096AC679285B0C16003E64FB /* English advanced topics ViewController.swift in Sources */,
+				096AC67B285B0C2B003E64FB /* Physcis Core topics ViewController.swift in Sources */,
+				096AC663285A625C003E64FB /* Economics ViewController.swift in Sources */,
+				096AC675285A6320003E64FB /* Math advancec topics ViewController.swift in Sources */,
 				090A36BF285790690082BAAB /* BookSelf.xcdatamodeld in Sources */,
+				096AC667285A6292003E64FB /* Psych ViewController.swift in Sources */,
+				096AC67F285B0C50003E64FB /* Chemistry advanced topics ViewController.swift in Sources */,
+				096AC653285A6186003E64FB /* Physics VC ViewController.swift in Sources */,
+				096AC659285A61E1003E64FB /* Physics Apps ViewController.swift in Sources */,
+				096AC651285A6174003E64FB /* English VCViewController.swift in Sources */,
+				096AC657285A61C4003E64FB /* English AppsViewController.swift in Sources */,
+				096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */,
 				090A36B7285790690082BAAB /* SceneDelegate.swift in Sources */,
+				096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */,
+				096AC65B285A61FD003E64FB /* Chem VCViewController.swift in Sources */,
+				096AC66F285A62C2003E64FB /* Biology ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
