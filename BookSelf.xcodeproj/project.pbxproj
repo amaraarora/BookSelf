@@ -46,6 +46,8 @@
 		096AC681285B0C5D003E64FB /* Physics advanced topics  ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */; };
 		096AC683285B0E3F003E64FB /* com sci core topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */; };
 		096AC685285B0E5C003E64FB /* com sci advanced topics ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */; };
+		78200F1A285B6FE0003BF530 /* compSciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78200F19285B6FE0003BF530 /* compSciViewController.swift */; };
+		78200F20285B842B003BF530 /* activitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78200F1F285B842B003BF530 /* activitiesViewController.swift */; };
 		78960885285B44A800004AEA /* outdoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78960884285B44A800004AEA /* outdoorViewController.swift */; };
 		78960887285B47DB00004AEA /* indoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78960886285B47DB00004AEA /* indoorViewController.swift */; };
 		78CEAD162859E8F800207DF2 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 78CEAD152859E8F700207DF2 /* Font */; };
@@ -113,6 +115,8 @@
 		096AC680285B0C5D003E64FB /* Physics advanced topics  ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physics advanced topics  ViewController.swift"; sourceTree = "<group>"; };
 		096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci core topics ViewController.swift"; sourceTree = "<group>"; };
 		096AC684285B0E5C003E64FB /* com sci advanced topics ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "com sci advanced topics ViewController.swift"; sourceTree = "<group>"; };
+		78200F19285B6FE0003BF530 /* compSciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compSciViewController.swift; sourceTree = "<group>"; };
+		78200F1F285B842B003BF530 /* activitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitiesViewController.swift; sourceTree = "<group>"; };
 		78960884285B44A800004AEA /* outdoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outdoorViewController.swift; sourceTree = "<group>"; };
 		78960886285B47DB00004AEA /* indoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indoorViewController.swift; sourceTree = "<group>"; };
 		78CEAD152859E8F700207DF2 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 		090A36A8285790690082BAAB = {
 			isa = PBXGroup;
 			children = (
+				78200F1F285B842B003BF530 /* activitiesViewController.swift */,
+				78200F19285B6FE0003BF530 /* compSciViewController.swift */,
 				78960884285B44A800004AEA /* outdoorViewController.swift */,
 				78D956FE285B3929008B3B6C /* CoursesViewController.swift */,
 				096AC682285B0E3F003E64FB /* com sci core topics ViewController.swift */,
@@ -378,9 +384,11 @@
 				096AC655285A61A6003E64FB /* Math AppsViewController.swift in Sources */,
 				096AC66D285A62B6003E64FB /* History Apps ViewController.swift in Sources */,
 				096AC673285A630F003E64FB /* Math core topics ViewController.swift in Sources */,
+				78200F1A285B6FE0003BF530 /* compSciViewController.swift in Sources */,
 				096AC65D285A6212003E64FB /* Chem Apps ViewController.swift in Sources */,
 				096AC679285B0C16003E64FB /* English advanced topics ViewController.swift in Sources */,
 				096AC67B285B0C2B003E64FB /* Physcis Core topics ViewController.swift in Sources */,
+				78200F20285B842B003BF530 /* activitiesViewController.swift in Sources */,
 				096AC663285A625C003E64FB /* Economics ViewController.swift in Sources */,
 				096AC675285A6320003E64FB /* Math advancec topics ViewController.swift in Sources */,
 				78D956FF285B3929008B3B6C /* CoursesViewController.swift in Sources */,
@@ -573,6 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2V744725X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookSelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +609,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2V744725X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookSelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

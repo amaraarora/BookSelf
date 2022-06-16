@@ -14,16 +14,19 @@ class ES_Apps_ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+    @IBAction func khanES(_ sender: Any) {
+        let khanEsURL = URL(string: "https://www.khanacademy.org/science/ap-college-environmental-science")
+        UIApplication.shared.open(khanEsURL!)
     }
-    */
-
+    
+    @IBAction func geology(_ sender: Any) {
+        let geoURL = URL(string: "https://geology.com/")
+        UIApplication.shared.open(geoURL!)
+    }
+    
+    @IBAction func ency(_ sender: Any) {
+        let encyURL = URL(string: "https://editors.eol.org/eoearth/wiki/The_Encyclopedia_of_Earth")
+        UIApplication.shared.open(encyURL!)
+    }
 }

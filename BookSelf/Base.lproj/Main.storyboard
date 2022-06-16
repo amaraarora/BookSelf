@@ -21,6 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-ex-Wqk">
+                                <rect key="frame" x="-211" y="287" width="793" height="611"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (1)" translatesAutoresizingMaskIntoConstraints="NO" id="frg-gC-6cz">
+                                <rect key="frame" x="193" y="-217" width="441" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blh-IZ-ekN">
                                 <rect key="frame" x="46" y="67" width="228" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,42 +51,16 @@
                                 <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-8x-aj6">
-                                <rect key="frame" x="57" y="399" width="301" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Resources →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="hA8-qX-NGJ" kind="show" id="kUB-gG-CNV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXV-Mu-voA">
-                                <rect key="frame" x="57" y="670" width="301" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFM-UI-Prp">
+                                <rect key="frame" x="57" y="657" width="301" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Notes →" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-kn-q9J">
-                                <rect key="frame" x="57" y="536" width="301" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Activities →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="1OP-6e-qMN" kind="show" id="rta-aX-DQT"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va6-8v-71R">
                                 <rect key="frame" x="234" y="218" width="124" height="48"/>
@@ -89,7 +71,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="English">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -110,7 +92,8 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Physics">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -131,7 +114,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Chemistry">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -152,7 +135,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Economics">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -185,7 +168,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Mathematics">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -197,6 +180,31 @@
                                     <segue destination="ZYk-Og-34l" kind="show" id="1qM-Nq-ige"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05B-JY-xSF">
+                                <rect key="frame" x="57" y="406" width="301" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Resources →" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-kn-q9J">
+                                <rect key="frame" x="57" y="532" width="301" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Activities →" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.39607840779999998" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1OP-6e-qMN" kind="show" id="rta-aX-DQT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -205,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="-463"/>
+            <point key="canvasLocation" x="-242.0289855072464" y="-463.39285714285711"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="HW5-HT-uyC">
@@ -215,6 +223,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-00-CxX">
+                                <rect key="frame" x="-98" y="304" width="644" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subjects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py3-eA-fep">
                                 <rect key="frame" x="53" y="55" width="178" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -236,7 +248,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-QH-XBi">
-                                <rect key="frame" x="87" y="308" width="240" height="40"/>
+                                <rect key="frame" x="62" y="273" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -249,7 +261,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erW-M7-e4O">
-                                <rect key="frame" x="87" y="212" width="240" height="40"/>
+                                <rect key="frame" x="62" y="147" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -262,7 +274,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKI-6F-TOg">
-                                <rect key="frame" x="87" y="356" width="240" height="40"/>
+                                <rect key="frame" x="62" y="336" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -276,7 +288,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSf-I2-qPs">
-                                <rect key="frame" x="87" y="452" width="240" height="40"/>
+                                <rect key="frame" x="62" y="462" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -290,7 +302,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-OJ-HJL">
-                                <rect key="frame" x="87" y="548" width="240" height="40"/>
+                                <rect key="frame" x="62" y="588" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -304,7 +316,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5o-EB-58c">
-                                <rect key="frame" x="87" y="404" width="240" height="40"/>
+                                <rect key="frame" x="62" y="399" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -318,7 +330,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFO-LN-aGG">
-                                <rect key="frame" x="87" y="500" width="240" height="40"/>
+                                <rect key="frame" x="62" y="525" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -331,7 +343,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6Z-Sa-mmy">
-                                <rect key="frame" x="87" y="596" width="240" height="40"/>
+                                <rect key="frame" x="62" y="651" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -344,7 +356,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t51-wh-6wC">
-                                <rect key="frame" x="87" y="260" width="240" height="40"/>
+                                <rect key="frame" x="62" y="210" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -358,13 +370,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9o-Ti-1UN">
-                                <rect key="frame" x="87" y="644" width="240" height="40"/>
+                                <rect key="frame" x="62" y="714" width="290" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Computer Science " cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="pcb-2M-ziG" kind="show" id="bUB-Gc-2Vr"/>
@@ -378,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKs-D7-9Xl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="-225"/>
+            <point key="canvasLocation" x="1308.6956521739132" y="-225"/>
         </scene>
         <!--Math core topics View Controller-->
         <scene sceneID="OgB-4g-nNt">
@@ -389,7 +402,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utF-9d-u2D">
-                                <rect key="frame" x="30" y="65" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -397,7 +410,7 @@
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cn-IM-0wW">
-                                <rect key="frame" x="18" y="113" width="261" height="39"/>
+                                <rect key="frame" x="43" y="99" width="261" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Mathematics">
@@ -408,10 +421,16 @@
                                     <segue destination="ZYk-Og-34l" kind="show" id="WLa-b0-hnF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-p9-Ogw">
-                                <rect key="frame" x="60" y="180" width="294" height="417"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core math" translatesAutoresizingMaskIntoConstraints="NO" id="Cxe-o4-Ivr">
+                                <rect key="frame" x="47" y="581" width="320" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">BODMAS Rule
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-p9-Ogw">
+                                <rect key="frame" x="72" y="146" width="270" height="391"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">BODMAS Rule
 Prime and Composite numbers
 HCF and LCM
 Basic Menstruation
@@ -420,19 +439,19 @@ Decimal and Fractions
 Ratio and Proportion
 Three-dimensional shapes
 Geometry
-Probability
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+Probability</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.35685196520000001" green="0.60000312330000005" blue="0.91372090579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="MontserratRoman-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core math" translatesAutoresizingMaskIntoConstraints="NO" id="Cxe-o4-Ivr">
-                                <rect key="frame" x="47" y="581" width="320" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HKl-i6-Fgm"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="3pB-t7-uFj"/>
                 </viewController>
@@ -448,16 +467,8 @@ Probability
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-00-rxc">
-                                <rect key="frame" x="32" y="44" width="349" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
-                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QW1-IR-arT">
-                                <rect key="frame" x="20" y="92" width="261" height="39"/>
+                                <rect key="frame" x="43" y="146" width="261" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Mathematics">
@@ -468,10 +479,24 @@ Probability
                                     <segue destination="ZYk-Og-34l" kind="show" id="46m-GS-w2o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de9-WX-VsL">
-                                <rect key="frame" x="62" y="175" width="294" height="417"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="advanced math" translatesAutoresizingMaskIntoConstraints="NO" id="H18-8p-rn2">
+                                <rect key="frame" x="49" y="600" width="321" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Advanced Calculus
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37d-2n-3Tk">
+                                <rect key="frame" x="53" y="43" width="243" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de9-WX-VsL">
+                                <rect key="frame" x="62" y="190" width="294" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Advanced Calculus
 Differential Equations
 Number Theory
 Abstract Algebra
@@ -484,17 +509,18 @@ College Geometry
 Non-Euclidean Geometry
 Topology
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="24" name="MontserratRoman-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="advanced math" translatesAutoresizingMaskIntoConstraints="NO" id="H18-8p-rn2">
-                                <rect key="frame" x="49" y="600" width="321" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HgE-BS-95c"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="diU-pe-bKd"/>
                 </viewController>
@@ -531,7 +557,7 @@ Topology
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuo-mk-vv5">
-                                <rect key="frame" x="60" y="226" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -544,7 +570,7 @@ Topology
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="735-NP-IQt">
-                                <rect key="frame" x="60" y="548" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -557,7 +583,7 @@ Topology
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-PX-WGL">
-                                <rect key="frame" x="60" y="383" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -589,7 +615,7 @@ Topology
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Z5-4zr">
-                                <rect key="frame" x="32" y="44" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -597,7 +623,7 @@ Topology
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-nl-BB7">
-                                <rect key="frame" x="49" y="92" width="202" height="39"/>
+                                <rect key="frame" x="43" y="99" width="202" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to English">
@@ -628,7 +654,7 @@ Day to day word usage
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C4U-XR-jJ1"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="AsM-XI-SHD"/>
                 </viewController>
@@ -682,7 +708,7 @@ Reading comprehensions with technical terminology
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bme-WY-Rye"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="R4W-L8-7Bv"/>
                 </viewController>
@@ -699,7 +725,7 @@ Reading comprehensions with technical terminology
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16P-BI-MwI">
-                                <rect key="frame" x="26" y="66" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -707,7 +733,7 @@ Reading comprehensions with technical terminology
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boc-x6-5RL">
-                                <rect key="frame" x="43" y="114" width="203" height="39"/>
+                                <rect key="frame" x="43" y="99" width="203" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Physics">
@@ -742,7 +768,7 @@ Energy production
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mjs-Ca-noH"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6aM-iO-zry"/>
                 </viewController>
@@ -801,7 +827,7 @@ Quantum mechanics
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Tr-QE-M0u"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="BvD-4B-lIv"/>
                 </viewController>
@@ -974,7 +1000,7 @@ Quantum mechanics
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMz-EJ-F1i">
-                                <rect key="frame" x="34" y="61" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -982,7 +1008,7 @@ Quantum mechanics
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUS-8o-w2n">
-                                <rect key="frame" x="37" y="109" width="232" height="39"/>
+                                <rect key="frame" x="43" y="99" width="232" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Chemistry">
@@ -1019,7 +1045,7 @@ Periodic Table
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DFz-A7-4p5"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="vwv-b0-UsA"/>
                 </viewController>
@@ -1078,7 +1104,7 @@ P block elements
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5XC-BT-ufG"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="V0d-Qx-SS1"/>
                 </viewController>
@@ -1173,7 +1199,7 @@ P block elements
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zef-b9-gEK">
-                                <rect key="frame" x="30" y="73" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -1181,7 +1207,7 @@ P block elements
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-lw-puV">
-                                <rect key="frame" x="73" y="121" width="153" height="39"/>
+                                <rect key="frame" x="43" y="99" width="153" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to CS">
@@ -1219,7 +1245,7 @@ Compiler Design
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="flz-3U-5r9"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="YAB-97-ect"/>
                 </viewController>
@@ -1278,7 +1304,7 @@ Advanced Database Systems
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mtn-pQ-szS"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="BuF-Cc-sj3"/>
                 </viewController>
@@ -1373,7 +1399,7 @@ Advanced Database Systems
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmM-oz-dmU">
-                                <rect key="frame" x="26" y="73" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -1381,7 +1407,7 @@ Advanced Database Systems
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sW-Uh-faE">
-                                <rect key="frame" x="69" y="121" width="152" height="39"/>
+                                <rect key="frame" x="43" y="99" width="152" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to ES">
@@ -1393,7 +1419,7 @@ Advanced Database Systems
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i39-ZK-Edu">
-                                <rect key="frame" x="12" y="269" width="382" height="453"/>
+                                <rect key="frame" x="12" y="269" width="382" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Remote Sensing and Geographic Information Systems.
 Bioremediation
@@ -1417,7 +1443,7 @@ Soil
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5fU-aB-wBT"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="wGK-6P-IDj"/>
                 </viewController>
@@ -1433,26 +1459,14 @@ Soil
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zu-R5-IzD">
-                                <rect key="frame" x="26" y="73" width="349" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zu-R5-IzD">
+                                <rect key="frame" x="53" y="43" width="243" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
                                 <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLL-6d-yVn">
-                                <rect key="frame" x="69" y="121" width="152" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="← Back to ES">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="PvO-fR-Clx" kind="show" id="Q7U-mE-8JI"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adv es" translatesAutoresizingMaskIntoConstraints="NO" id="cZD-VJ-LFW">
                                 <rect key="frame" x="26" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1485,9 +1499,21 @@ Geology
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLL-6d-yVn">
+                                <rect key="frame" x="43" y="146" width="152" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="← Back to ES">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="PvO-fR-Clx" kind="show" id="Q7U-mE-8JI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6mR-V0-gQd"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="SK6-b6-ncZ"/>
                 </viewController>
@@ -1504,7 +1530,7 @@ Geology
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ab-Bu-TiS">
-                                <rect key="frame" x="34" y="73" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -1512,7 +1538,7 @@ Geology
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ly8-G8-Hdp">
-                                <rect key="frame" x="31" y="121" width="244" height="39"/>
+                                <rect key="frame" x="43" y="99" width="244" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Psychology">
@@ -1542,7 +1568,7 @@ Waves and signs theory
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ucQ-4U-ojy"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6cx-R9-AKc"/>
                 </viewController>
@@ -1558,16 +1584,8 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csw-qq-YbO">
-                                <rect key="frame" x="30" y="73" width="349" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
-                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxM-us-cAz">
-                                <rect key="frame" x="27" y="121" width="244" height="39"/>
+                                <rect key="frame" x="43" y="146" width="244" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Psychology">
@@ -1600,9 +1618,17 @@ Waves and signs theory
                                 <rect key="frame" x="30" y="494" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-vD-ITJ">
+                                <rect key="frame" x="53" y="43" width="243" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fmq-fR-K6r"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="cRo-8f-Ywi"/>
                 </viewController>
@@ -1639,7 +1665,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8d-Sn-n2j">
-                                <rect key="frame" x="60" y="238" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1670,11 +1696,14 @@ Waves and signs theory
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Tips and Tricks →" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="filled" title="Websites and Apps →" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6m5-LV-7rB" kind="show" id="asX-aZ-Pba"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nIl-ME-8fe"/>
@@ -2007,7 +2036,7 @@ Waves and signs theory
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxp-PR-V1m">
-                                <rect key="frame" x="30" y="73" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -2015,7 +2044,7 @@ Waves and signs theory
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXQ-Ma-Ogg">
-                                <rect key="frame" x="50" y="121" width="199" height="39"/>
+                                <rect key="frame" x="43" y="99" width="199" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to History">
@@ -2047,13 +2076,13 @@ Political philosophies
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jSL-0i-kEk"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="EZn-9r-N9j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXc-Vp-RSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6410" y="34"/>
+            <point key="canvasLocation" x="6322" y="13"/>
         </scene>
         <!--adv topics history-->
         <scene sceneID="2cj-6d-5IN">
@@ -2063,16 +2092,8 @@ Political philosophies
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-1q-55i">
-                                <rect key="frame" x="30" y="73" width="349" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
-                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-EH-lHd">
-                                <rect key="frame" x="50" y="121" width="199" height="39"/>
+                                <rect key="frame" x="43" y="146" width="199" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to History">
@@ -2103,9 +2124,17 @@ Natural Disasters &amp; Environment
                                 <rect key="frame" x="30" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl2-l5-f9g">
+                                <rect key="frame" x="53" y="43" width="243" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sxz-bm-8sw"/>
-                        <color key="backgroundColor" red="0.90391161840000001" green="0.96611279250000004" blue="0.71543895170000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="HiC-LW-bBL"/>
                 </viewController>
@@ -2425,7 +2454,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OID-3e-EvQ">
-                                <rect key="frame" x="87" y="155" width="240" height="70"/>
+                                <rect key="frame" x="60" y="166" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2438,7 +2467,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-Ha-MPI">
-                                <rect key="frame" x="87" y="233" width="240" height="70"/>
+                                <rect key="frame" x="60" y="244" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2452,7 +2481,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15V-Jb-QqG">
-                                <rect key="frame" x="87" y="311" width="240" height="70"/>
+                                <rect key="frame" x="60" y="322" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2465,7 +2494,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-eq-8SK">
-                                <rect key="frame" x="87" y="389" width="240" height="70"/>
+                                <rect key="frame" x="60" y="400" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2479,7 +2508,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWE-BW-NGq">
-                                <rect key="frame" x="87" y="467" width="240" height="70"/>
+                                <rect key="frame" x="60" y="478" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2493,7 +2522,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l90-aC-zRo">
-                                <rect key="frame" x="87" y="545" width="240" height="70"/>
+                                <rect key="frame" x="60" y="556" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2507,7 +2536,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MD-1P-P7g">
-                                <rect key="frame" x="87" y="623" width="240" height="70"/>
+                                <rect key="frame" x="60" y="634" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2521,7 +2550,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qou-sD-Ugg">
-                                <rect key="frame" x="87" y="701" width="240" height="70"/>
+                                <rect key="frame" x="60" y="712" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2547,7 +2576,7 @@ Natural Disasters &amp; Environment
         <!--Activities VC-->
         <scene sceneID="6SF-9a-Lkf">
             <objects>
-                <viewController title="Activities VC" id="1OP-6e-qMN" sceneMemberID="viewController">
+                <viewController title="Activities VC" id="1OP-6e-qMN" customClass="activitiesViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2cG-aE-7pq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2561,24 +2590,32 @@ Natural Disasters &amp; Environment
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4f-po-a0V">
-                                <rect key="frame" x="60" y="167" width="294" height="108"/>
+                                <rect key="frame" x="36" y="188" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Indoor →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Indoor →                                      ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.40000003579999999" green="0.58039218189999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="20" name="MontserratRoman-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.4196078479" green="0.59607845540000004" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="HjS-pf-FVe" kind="show" id="18W-Sn-MaX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-MP-0wm">
-                                <rect key="frame" x="60" y="611" width="294" height="108"/>
+                                <rect key="frame" x="32" y="572" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Courses →" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="filled" title="Courses →                                  " cornerStyle="small">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -2587,11 +2624,11 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csN-qp-kpn">
-                                <rect key="frame" x="60" y="383" width="294" height="108"/>
+                                <rect key="frame" x="36" y="378" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Outdoor →" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="filled" title="Outdoor →                                   " cornerStyle="small">
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2612,11 +2649,26 @@ Natural Disasters &amp; Environment
                                     <segue destination="BYZ-38-t0r" kind="show" id="4Og-tr-deB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indoor-activities-for-preschoolers-865x577" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-Qv-Qpw">
+                                <rect key="frame" x="202" y="199" width="164" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-72-mPT">
+                                <rect key="frame" x="202" y="389" width="164" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indoor-activities-for-preschoolers-865x577" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Jy-eDk">
+                                <rect key="frame" x="202" y="583" width="164" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f5l-7U-7Fg"/>
                         <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="hm0-uG-N6G"/>
+                    <connections>
+                        <outlet property="Indoor" destination="Eh4-Qv-Qpw" id="Lpx-5u-m5T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2D-65-71b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2705,7 +2757,7 @@ Natural Disasters &amp; Environment
             <objects>
                 <viewController title="ES Apps" id="6m5-LV-7rB" customClass="ES_Apps_ViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzN-Ga-OVZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Environmental Sciences" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfN-Wc-0zf">
@@ -2737,6 +2789,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="khanES:" destination="6m5-LV-7rB" eventType="touchUpInside" id="K2N-sh-vbQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qm-UK-jrK">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -2747,6 +2802,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="18"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ency:" destination="6m5-LV-7rB" eventType="touchUpInside" id="MRt-xn-RcL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLo-wM-trq">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -2758,11 +2816,15 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="geology:" destination="6m5-LV-7rB" eventType="touchUpInside" id="WCP-vJ-wwf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="03g-Mv-hML"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="B8F-TS-yn5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMf-HK-DOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2805,6 +2867,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ted:" destination="0EO-3D-aLU" eventType="touchUpInside" id="Mmx-Yt-CXh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbt-y7-obD">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -2815,6 +2880,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Eco:" destination="0EO-3D-aLU" eventType="touchUpInside" id="w4c-jn-eAd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugo-qg-5gk">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -2826,6 +2894,9 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="khanEco:" destination="0EO-3D-aLU" eventType="touchUpInside" id="Z2R-da-eYu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghM-FL-50d"/>
@@ -2874,6 +2945,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="hero:" destination="YIO-7o-zTj" eventType="touchUpInside" id="yKL-E0-J7H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thE-C7-bAl">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -2884,6 +2958,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="psych:" destination="YIO-7o-zTj" eventType="touchUpInside" id="p7L-jz-Exk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meo-bJ-xaP">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -2895,6 +2972,9 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="mindHack:" destination="YIO-7o-zTj" eventType="touchUpInside" id="bcK-u6-1Ug"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ue3-fI-eFn"/>
@@ -2943,6 +3023,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ninja:" destination="Hrp-J4-d7U" eventType="touchUpInside" id="jCN-21-PbY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vge-iB-F9x">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -2953,6 +3036,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="curiscope:" destination="Hrp-J4-d7U" eventType="touchUpInside" id="e25-aH-yhJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zT-h6-5s5">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -2964,6 +3050,9 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="bioOnline:" destination="Hrp-J4-d7U" eventType="touchUpInside" id="aIt-GT-dY7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gHc-fc-BEm"/>
@@ -3000,6 +3089,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="bbc:" destination="5Ad-Td-xmy" eventType="touchUpInside" id="lBf-gr-jgO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MV-jB-oPK">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3010,6 +3102,9 @@ Natural Disasters &amp; Environment
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="gcse:" destination="5Ad-Td-xmy" eventType="touchUpInside" id="wW4-00-ZTn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZb-vR-Jn3">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3021,6 +3116,9 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="brits:" destination="5Ad-Td-xmy" eventType="touchUpInside" id="V4s-aQ-911"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-FI-3le">
                                 <rect key="frame" x="43" y="99" width="199" height="39"/>
@@ -3070,6 +3168,116 @@ Natural Disasters &amp; Environment
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="hA8-qX-NGJ" kind="show" id="pad-dJ-azG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-1X-ywi">
+                                <rect key="frame" x="62" y="146" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="brainly" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="ew7-NR-8oZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uva-kc-vOn">
+                                <rect key="frame" x="62" y="224" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Socratic" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Rjv-Ib-brz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPb-Ec-lNS">
+                                <rect key="frame" x="62" y="302" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Byjus" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="4pf-pR-kuZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cV-Zs-gbe">
+                                <rect key="frame" x="62" y="380" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Qoura" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Nzq-xt-Mon"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE5-if-Gi7">
+                                <rect key="frame" x="62" y="458" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="British Council" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Euq-Qc-xne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ij-OjS">
+                                <rect key="frame" x="62" y="536" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Skillshare" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skillShare:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="USE-en-9N6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9O-Wv-Vl5">
+                                <rect key="frame" x="62" y="614" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="freeCodeCamp" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="freeCodeCamp:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="cKz-fZ-Wxn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAH-gj-mNo">
+                                <rect key="frame" x="62" y="692" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Invest In Girls" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="investGirls:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="vws-Va-qOf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3130,7 +3338,7 @@ Natural Disasters &amp; Environment
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F5-WI-boX">
-                                <rect key="frame" x="30" y="88" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -3138,7 +3346,7 @@ Natural Disasters &amp; Environment
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edX-LN-WGA">
-                                <rect key="frame" x="30" y="136" width="239" height="39"/>
+                                <rect key="frame" x="43" y="99" width="239" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Economics">
@@ -3154,7 +3362,7 @@ Natural Disasters &amp; Environment
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-eZ-idk">
-                                <rect key="frame" x="20" y="222" width="382" height="453"/>
+                                <rect key="frame" x="20" y="222" width="382" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Government intervention 
 Aggregate Demand 
@@ -3179,13 +3387,13 @@ Elasticities
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fAX-s3-g4p"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="QSm-b9-ilQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhO-Gq-pRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3327" y="1453"/>
+            <point key="canvasLocation" x="3326.0869565217395" y="1452.4553571428571"/>
         </scene>
         <!--eco adv topics-->
         <scene sceneID="fod-w0-1cA">
@@ -3220,7 +3428,7 @@ Elasticities
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-0r-MOi">
-                                <rect key="frame" x="16" y="238" width="382" height="453"/>
+                                <rect key="frame" x="16" y="238" width="382" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Calculations 
 Marshall and J curve 
@@ -3241,13 +3449,13 @@ Perfect and Imperfect competition
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eOI-Si-4UM"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="459-8g-pIG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yh-6V-OMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4017" y="1480"/>
+            <point key="canvasLocation" x="4015.9420289855075" y="1479.9107142857142"/>
         </scene>
         <!--bio core topics-->
         <scene sceneID="dGD-Dj-LEg">
@@ -3258,7 +3466,7 @@ Perfect and Imperfect competition
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63W-t8-49T">
-                                <rect key="frame" x="30" y="73" width="237" height="49"/>
+                                <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -3266,7 +3474,7 @@ Perfect and Imperfect competition
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-Tr-A6Z">
-                                <rect key="frame" x="47" y="121" width="204" height="39"/>
+                                <rect key="frame" x="43" y="99" width="204" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Biology">
@@ -3298,7 +3506,7 @@ Human Physiology
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ntf-sS-MdM"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="tfv-hG-9G0"/>
                 </viewController>
@@ -3363,7 +3571,7 @@ Histology
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zNm-sX-SYC"/>
-                        <color key="backgroundColor" red="0.87957103960000005" green="0.96611279250000004" blue="0.81820900379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="pdw-3o-wxL"/>
                 </viewController>
@@ -3396,6 +3604,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Khan:" destination="NMv-yo-cn1" eventType="touchUpInside" id="Qwq-R7-erw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87a-He-s6b">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3406,6 +3617,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="mathspa:" destination="NMv-yo-cn1" eventType="touchUpInside" id="hN5-ca-Zgi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXi-4p-omK">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3417,6 +3631,9 @@ Histology
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="mathstud:" destination="NMv-yo-cn1" eventType="touchUpInside" id="YyZ-6d-lka"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IK-1y-Uy7">
                                 <rect key="frame" x="43" y="99" width="261" height="39"/>
@@ -3477,6 +3694,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Duolingp:" destination="jL3-ty-1MM" eventType="touchUpInside" id="tbV-mc-LT1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-LB-Js7">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3487,6 +3707,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="fluentU:" destination="jL3-ty-1MM" eventType="touchUpInside" id="9Du-K5-leN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLH-yk-MDd">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3498,6 +3721,9 @@ Histology
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BBC:" destination="jL3-ty-1MM" eventType="touchUpInside" id="Sjc-eI-Avt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8t8-Ge-sW0"/>
@@ -3546,6 +3772,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="oomph:" destination="jNu-Wb-eRx" eventType="touchUpInside" id="8bv-Bf-01J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-9f-Fv0">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3556,6 +3785,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="monster:" destination="jNu-Wb-eRx" eventType="touchUpInside" id="Cb1-6n-9tc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuI-jF-wnw">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3567,6 +3799,9 @@ Histology
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="khanphy:" destination="jNu-Wb-eRx" eventType="touchUpInside" id="vs0-ew-NyH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t5k-nA-HMR"/>
@@ -3615,6 +3850,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="khanchem:" destination="8WP-V2-QLv" eventType="touchUpInside" id="hR0-zl-Qem"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sil-Gb-DLT">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3625,6 +3863,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ichem:" destination="8WP-V2-QLv" eventType="touchUpInside" id="iB8-Y4-Gvq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21S-i8-C6R">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3643,6 +3884,9 @@ Histology
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="chemperi:" destination="8WP-V2-QLv" eventType="touchUpInside" id="MWO-bX-c4a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6OG-ff-SoY"/>
@@ -3657,7 +3901,7 @@ Histology
         <!--CS Apps-->
         <scene sceneID="Ez6-Qj-2kp">
             <objects>
-                <viewController title="CS Apps" id="qSl-mq-zed" sceneMemberID="viewController">
+                <viewController title="CS Apps" id="qSl-mq-zed" customClass="compSciViewController" customModule="BookSelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Wh-7W-Jxc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3671,6 +3915,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="geeks:" destination="qSl-mq-zed" eventType="touchUpInside" id="kyh-Nk-XJd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo2-e3-3gZ">
                                 <rect key="frame" x="60" y="506" width="294" height="108"/>
@@ -3681,6 +3928,9 @@ Histology
                                     <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="w3:" destination="qSl-mq-zed" eventType="touchUpInside" id="8at-Hb-eUb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsJ-pr-mLS">
                                 <rect key="frame" x="60" y="341" width="294" height="108"/>
@@ -3692,6 +3942,9 @@ Histology
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="codecad:" destination="qSl-mq-zed" eventType="touchUpInside" id="eq9-hF-00o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer Science" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqe-PU-lH0">
                                 <rect key="frame" x="53" y="45" width="282" height="86"/>
@@ -3725,20 +3978,20 @@ Histology
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kUB-gG-CNV"/>
-        <segue reference="rta-aX-DQT"/>
-        <segue reference="mHw-fj-Bo9"/>
-        <segue reference="lQJ-wD-ybe"/>
-        <segue reference="bp1-CE-UOG"/>
+        <segue reference="pad-dJ-azG"/>
+        <segue reference="olU-MA-lvU"/>
+        <segue reference="AC0-ts-e5k"/>
+        <segue reference="04c-QU-oOS"/>
+        <segue reference="b3T-ah-eTX"/>
         <segue reference="wiU-yf-02u"/>
-        <segue reference="vEu-a5-AUZ"/>
-        <segue reference="3DW-7E-GXg"/>
+        <segue reference="qNX-PQ-duf"/>
+        <segue reference="bUB-Gc-2Vr"/>
         <segue reference="c5H-lZ-ExW"/>
         <segue reference="Ul5-xJ-WYF"/>
         <segue reference="lcT-Ho-kzx"/>
-        <segue reference="1qM-Nq-ige"/>
-        <segue reference="29e-7R-pac"/>
-        <segue reference="WCj-PP-y62"/>
+        <segue reference="nWY-j8-gvK"/>
+        <segue reference="9uO-zi-LH9"/>
+        <segue reference="4Og-tr-deB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="adv bio" width="571" height="316"/>
@@ -3760,6 +4013,10 @@ Histology
         <image name="core his" width="768" height="480"/>
         <image name="core math" width="451" height="297"/>
         <image name="core physics" width="1280" height="853"/>
+        <image name="indoor-activities-for-preschoolers-865x577" width="865" height="577"/>
+        <image name="pattern" width="1080" height="1080"/>
+        <image name="pattern (1)" width="1080" height="1080"/>
+        <image name="pattern (2)" width="1080" height="1080"/>
         <image name="skills" width="777" height="437"/>
     </resources>
 </document>

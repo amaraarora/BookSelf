@@ -1,21 +1,22 @@
 //
-//  Math core topics ViewController.swift
+//  activitiesViewController.swift
 //  BookSelf
 //
-//  Created by Amara Arora on 16/06/22.
+//  Created by Aisyah Qowarira on 6/16/22.
 //
 
 import UIKit
 
-class Math_core_topics_ViewController: UIViewController {
+class activitiesViewController: UIViewController {
 
-    @IBOutlet weak var Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Indoor.layer.cornerRadius = 45
         // Do any additional setup after loading the view.
-
-
+    }
+    
+    @IBOutlet weak var Indoor: UIImageView!
+    
     /*
     // MARK: - Navigation
 
@@ -25,5 +26,5 @@ class Math_core_topics_ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
+
 }

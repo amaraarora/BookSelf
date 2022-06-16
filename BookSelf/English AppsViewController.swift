@@ -14,16 +14,19 @@ class English_AppsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func Duolingp(_ sender: Any) {
+        let duobirdURL = URL(string: "https://www.duolingo.com")
+        UIApplication.shared.open(duobirdURL!)
     }
-    */
-
+    
+    @IBAction func BBC(_ sender: Any) {
+        let bbcURL = URL(string: "https://www.bbc.co.uk/learningenglish/")
+        UIApplication.shared.open(bbcURL!)
+    }
+    
+    @IBAction func fluentU(_ sender: Any) {
+        let fluentURL = URL(string: "https://www.fluentu.com/en/")
+        UIApplication.shared.open(fluentURL!)
+    }
 }
