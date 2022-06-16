@@ -9,9 +9,20 @@ import UIKit
 
 class English_Core_topics_ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        label.text =
+      
+        "Grammar, Basic Literature, Vowels, Consonants, Day to day word usage"
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
