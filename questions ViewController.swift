@@ -14,16 +14,31 @@ class questions_ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  
+    @IBAction func brainly(_ sender: Any) {
+        let brainlyURL = URL(string: "https://brainly.com")
+        UIApplication.shared.open(brainlyURL!)
     }
-    */
-
+    @IBAction func socratic(_ sender: Any) {
+        let socraURL = URL(string: "https://socratic.org")
+        UIApplication.shared.open(socraURL!)
+    }
+    @IBAction func byjus(_ sender: Any) {
+        let byjusURL = URL(string: "https://byjus.com")
+        UIApplication.shared.open(byjusURL!)
+    }
+    @IBAction func qoura(_ sender: Any) {
+        let quoraURL = URL(string: "https://www.quora.com")
+        UIApplication.shared.open(quoraURL!)
+    }
+    @IBAction func thebrits(_ sender: Any) {
+        let britsURL = URL(string: "https://learnenglish.britishcouncil.org/apps/learnenglish-grammar-uk-edition")
+        UIApplication.shared.open(britsURL!)
+    }
+   
+    @IBAction func tesch(_ sender: Any) {
+        let teachURL = URL(string: "https://teachnext.com")
+        UIApplication.shared.open(teachURL!)
+    }
+    
 }

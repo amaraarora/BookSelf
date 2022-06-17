@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,8 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Xet-vz-yns">
+                                <rect key="frame" x="170" y="-52" width="392" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="hCX-lt-fiu">
+                                <rect key="frame" x="0.0" y="146" width="414" height="730"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rant Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-ef-JPP">
-                                <rect key="frame" x="30" y="68" width="204" height="49"/>
+                                <rect key="frame" x="53" y="55" width="204" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="40"/>
@@ -31,7 +38,7 @@
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-7n-Thn">
-                                <rect key="frame" x="30" y="115" width="188" height="39"/>
+                                <rect key="frame" x="43" y="99" width="188" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="← Back to Home">
@@ -42,39 +49,48 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Hv2-x6-E3a"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usA-tz-C0b">
+                                <rect key="frame" x="31" y="208" width="353" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt9-dA-3cv">
+                                <rect key="frame" x="133" y="708" width="137" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Delete">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="MontserratRoman-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButton:" destination="nBv-mI-6nE" eventType="touchUpInside" id="DCz-SU-HoK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="t8k-d4-nLJ">
-                                <rect key="frame" x="31" y="162" width="353" height="117"/>
+                                <rect key="frame" x="30" y="583" width="353" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Rant about Studies or Anything Here. This is your Safe Space.">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <color key="NSColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="20" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="usA-tz-C0b">
-                                <rect key="frame" x="31" y="287" width="353" height="324"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt9-dA-3cv">
-                                <rect key="frame" x="133" y="671" width="137" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="delete"/>
-                                <connections>
-                                    <action selector="deleteButton:" destination="nBv-mI-6nE" eventType="touchUpInside" id="DCz-SU-HoK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tbS-Mx-NKd"/>
@@ -98,12 +114,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-ex-Wqk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (3)" translatesAutoresizingMaskIntoConstraints="NO" id="ucM-ex-Wqk">
                                 <rect key="frame" x="-211" y="287" width="793" height="611"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (1)" translatesAutoresizingMaskIntoConstraints="NO" id="frg-gC-6cz">
-                                <rect key="frame" x="193" y="-217" width="441" height="496"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="frg-gC-6cz">
+                                <rect key="frame" x="172" y="-217" width="462" height="518"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blh-IZ-ekN">
@@ -306,7 +322,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-00-CxX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-00-CxX">
                                 <rect key="frame" x="-98" y="304" width="644" height="592"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -525,7 +541,7 @@ Geometry
 Probability</string>
                                         <attributes>
                                             <color key="NSColor" red="0.35685196520000001" green="0.60000312330000005" blue="0.91372090579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="24"/>
+                                            <font key="NSFont" size="24" name="MontserratRoman-SemiBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -575,7 +591,7 @@ Probability</string>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de9-WX-VsL">
-                                <rect key="frame" x="62" y="190" width="294" height="417"/>
+                                <rect key="frame" x="51" y="193" width="313" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -590,11 +606,10 @@ Numerical Analysis
 Theory of Interest
 College Geometry
 Non-Euclidean Geometry
-Topology
-</string>
+Topology</string>
                                         <attributes>
                                             <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="24"/>
+                                            <font key="NSFont" size="24" name="MontserratRoman-SemiBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -619,6 +634,10 @@ Topology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (3)" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-7S-Ih9">
+                                <rect key="frame" x="-105" y="272" width="738" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nve-3E-8xD">
                                 <rect key="frame" x="53" y="55" width="271" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -687,7 +706,7 @@ Topology
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP1-dh-G29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="-1017"/>
+            <point key="canvasLocation" x="740.57971014492762" y="-1017.1875"/>
         </scene>
         <!--eng core topics-->
         <scene sceneID="Kaz-5d-Q35">
@@ -717,24 +736,29 @@ Topology
                                     <segue destination="a4A-fc-thV" kind="show" id="8mG-t2-YNB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-IO-h2E">
-                                <rect key="frame" x="61" y="159" width="294" height="417"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Grammar 
-Basic Literature 
-Vowels
-Consonants 
-Day to day word usage 
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core english" translatesAutoresizingMaskIntoConstraints="NO" id="8Ce-Kc-Mfa">
                                 <rect key="frame" x="32" y="519" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-IO-h2E">
+                                <rect key="frame" x="85" y="146" width="257" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Grammar 
+Basic Literature 
+Vowels
+Consonants 
+Day to day word usage </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="29" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C4U-XR-jJ1"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -777,16 +801,20 @@ Day to day word usage
                                     <segue destination="a4A-fc-thV" kind="show" id="Xpq-6o-NVF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDT-mf-H5e">
-                                <rect key="frame" x="48" y="159" width="321" height="417"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDT-mf-H5e">
+                                <rect key="frame" x="47" y="139" width="321" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Shakespeare literature and other such books                
-Reading comprehensions with technical terminology
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Shakespeare literature and other such books                
+Reading comprehensions with technical terminology</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="29" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -827,28 +855,32 @@ Reading comprehensions with technical terminology
                                     <segue destination="HC7-qp-4Vk" kind="show" id="QG4-jO-RMn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-zE-MxY">
-                                <rect key="frame" x="12" y="215" width="382" height="384"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core physics" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-XX-ynI">
+                                <rect key="frame" x="26" y="527" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Measurements and uncertainties
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-zE-MxY">
+                                <rect key="frame" x="51" y="146" width="313" height="383"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Measurements and uncertainties
 Mechanics
 Thermal physics
 Waves
 Electricity and magnetism
 Circular motion and gravitation
 Atomic, nuclear and particle physics
-Energy production
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+Energy production</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core physics" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-XX-ynI">
-                                <rect key="frame" x="26" y="527" width="362" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mjs-Ca-noH"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -887,27 +919,29 @@ Energy production
                                     <segue destination="HC7-qp-4Vk" kind="show" id="Thl-tD-K5Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-rH-SBY">
-                                <rect key="frame" x="16" y="240" width="382" height="384"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Gauss theorem
-Biot savart law
-Kirchhoff's thermal law
-Maxwell equations
-Quantum mechanics
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adv physics" translatesAutoresizingMaskIntoConstraints="NO" id="dkU-F8-dwW">
                                 <rect key="frame" x="30" y="505" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-rH-SBY">
+                                <rect key="frame" x="55" y="139" width="313" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Gauss theorem
+Biot savart law
+Kirchhoff's thermal law
+Maxwell equations
+Quantum mechanics</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Tr-QE-M0u"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -916,7 +950,7 @@ Quantum mechanics
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rid-79-gCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5488" y="-2563"/>
+            <point key="canvasLocation" x="5486.9565217391309" y="-2563.3928571428569"/>
         </scene>
         <!--English VC-->
         <scene sceneID="p9h-hV-btL">
@@ -926,6 +960,24 @@ Quantum mechanics
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (4)" translatesAutoresizingMaskIntoConstraints="NO" id="vdf-7N-L15">
+                                <rect key="frame" x="-199" y="190" width="812" height="741"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teT-Pz-z3B">
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Advanced Topics →" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qk1-Qa-PgH" kind="show" id="NAk-6U-fMd"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMH-15-2Pj">
                                 <rect key="frame" x="43" y="99" width="215" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -947,7 +999,7 @@ Quantum mechanics
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q0-oq-qDe">
-                                <rect key="frame" x="60" y="219" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -960,7 +1012,7 @@ Quantum mechanics
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSf-bQ-Dv3">
-                                <rect key="frame" x="60" y="541" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -970,20 +1022,6 @@ Quantum mechanics
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="jL3-ty-1MM" kind="show" id="p1C-sb-2Es"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teT-Pz-z3B">
-                                <rect key="frame" x="60" y="376" width="294" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Advanced Topics →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="qk1-Qa-PgH" kind="show" id="NAk-6U-fMd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1004,6 +1042,10 @@ Quantum mechanics
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (2)" translatesAutoresizingMaskIntoConstraints="NO" id="xeD-9V-0tv">
+                                <rect key="frame" x="-61" y="300" width="712" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Physics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zco-oI-mTf">
                                 <rect key="frame" x="53" y="55" width="155" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1025,7 +1067,7 @@ Quantum mechanics
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qa-Mv-YFv">
-                                <rect key="frame" x="60" y="233" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1038,7 +1080,7 @@ Quantum mechanics
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-dG-dgI">
-                                <rect key="frame" x="60" y="555" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1051,7 +1093,7 @@ Quantum mechanics
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCa-SH-2Ay">
-                                <rect key="frame" x="60" y="390" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1102,30 +1144,31 @@ Quantum mechanics
                                     <segue destination="6x6-OL-QBq" kind="show" id="aCB-Ih-PCz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-fh-otj">
-                                <rect key="frame" x="20" y="257" width="382" height="384"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core chem" translatesAutoresizingMaskIntoConstraints="NO" id="yMI-lT-A9D">
+                                <rect key="frame" x="34" y="522" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Acids, Bases, and pH
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-fh-otj">
+                                <rect key="frame" x="70" y="146" width="275" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Acids, Bases, and pH
 Atomic Structure
 Electrochemistry
 Units and Measurement
 Thermochemistry
 Chemical Bonding
-Periodic Table
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+Periodic Table</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core chem" translatesAutoresizingMaskIntoConstraints="NO" id="yMI-lT-A9D">
-                                <rect key="frame" x="34" y="522" width="362" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DFz-A7-4p5"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1134,7 +1177,7 @@ Periodic Table
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiN-Rn-neE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7163" y="-1713"/>
+            <point key="canvasLocation" x="7162.3188405797109" y="-1713.6160714285713"/>
         </scene>
         <!--chem adv topics-->
         <scene sceneID="Jch-DK-jtj">
@@ -1164,27 +1207,28 @@ Periodic Table
                                     <segue destination="6x6-OL-QBq" kind="show" id="I65-L2-kwC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsF-YO-Due">
-                                <rect key="frame" x="12" y="269" width="382" height="384"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Van’t Hoff factor
-Electrochemistry
-Chemical kinetics
-P block elements
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adv chem-1" translatesAutoresizingMaskIntoConstraints="NO" id="reX-HG-ugf">
                                 <rect key="frame" x="29" y="518" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsF-YO-Due">
+                                <rect key="frame" x="54" y="168" width="313" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Van’t Hoff factor
+Electrochemistry
+Chemical kinetics
+P block elements</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="29" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5XC-BT-ufG"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1193,7 +1237,7 @@ P block elements
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vem-XV-mky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7917" y="-1714"/>
+            <point key="canvasLocation" x="7915.9420289855079" y="-1714.2857142857142"/>
         </scene>
         <!--Chem VC-->
         <scene sceneID="1z6-Fi-djY">
@@ -1203,6 +1247,10 @@ P block elements
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (1)" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-jg-SBD">
+                                <rect key="frame" x="-102" y="355" width="648" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chemistry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-IN-FBA">
                                 <rect key="frame" x="53" y="55" width="214" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1224,7 +1272,7 @@ P block elements
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hf-Kg-A3S">
-                                <rect key="frame" x="60" y="233" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1237,7 +1285,7 @@ P block elements
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-WQ-EYH">
-                                <rect key="frame" x="60" y="555" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1250,7 +1298,7 @@ P block elements
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-7M-zIt">
-                                <rect key="frame" x="60" y="390" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1305,25 +1353,26 @@ P block elements
                                 <rect key="frame" x="30" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-un-uHp">
-                                <rect key="frame" x="12" y="217" width="398" height="462"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-un-uHp">
+                                <rect key="frame" x="51" y="146" width="313" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Data Structures
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Data Structures
 Algorithms
 Microprocessors 
 Computer Networks
 Operating Systems
 Theory of Computation
 Compiler Design
- Programming basics 
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+Programming basics </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1334,7 +1383,7 @@ Compiler Design
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKE-ai-PXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9772.463768115942" y="-1058.0357142857142"/>
+            <point key="canvasLocation" x="9771.0144927536239" y="-1058.0357142857142"/>
         </scene>
         <!--adv cs topics-->
         <scene sceneID="XfG-ob-Opx">
@@ -1364,27 +1413,28 @@ Compiler Design
                                     <segue destination="pcb-2M-ziG" kind="show" id="3DW-7E-GXg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Qo-P6L">
-                                <rect key="frame" x="12" y="257" width="382" height="384"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Turing Machines/ Theory of computation
-Computer Organization &amp; Architecture
-Discrete Mathematical Structures
-Advanced Database Systems
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adv cs" translatesAutoresizingMaskIntoConstraints="NO" id="7g5-54-Nsp">
                                 <rect key="frame" x="26" y="478" width="362" height="352"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Qo-P6L">
+                                <rect key="frame" x="51" y="156" width="313" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Turing Machines/ Theory of computation
+Computer Organization &amp; Architecture
+Discrete Mathematical Structures
+Advanced Database Systems</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mtn-pQ-szS"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1403,6 +1453,10 @@ Advanced Database Systems
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (3)" translatesAutoresizingMaskIntoConstraints="NO" id="NjT-Qn-NUN">
+                                <rect key="frame" x="-143" y="356" width="565" height="555"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer Science" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8G-nZ-xeV">
                                 <rect key="frame" x="53" y="45" width="282" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1424,7 +1478,7 @@ Advanced Database Systems
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K41-YX-RG8">
-                                <rect key="frame" x="60" y="233" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1437,7 +1491,7 @@ Advanced Database Systems
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8V-n6-4QC">
-                                <rect key="frame" x="60" y="555" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1450,7 +1504,7 @@ Advanced Database Systems
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5c-tj-MTO">
-                                <rect key="frame" x="60" y="390" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1501,10 +1555,16 @@ Advanced Database Systems
                                     <segue destination="PvO-fR-Clx" kind="show" id="vEu-a5-AUZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i39-ZK-Edu">
-                                <rect key="frame" x="12" y="269" width="382" height="197"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core es" translatesAutoresizingMaskIntoConstraints="NO" id="FGP-rk-VJ8">
+                                <rect key="frame" x="26" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Remote Sensing and Geographic Information Systems.
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i39-ZK-Edu">
+                                <rect key="frame" x="63" y="146" width="289" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Remote Sensing and Geographic Information Systems
 Bioremediation
 Noise and Light Pollution
 Limnology
@@ -1516,14 +1576,15 @@ Soil
 
 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core es" translatesAutoresizingMaskIntoConstraints="NO" id="FGP-rk-VJ8">
-                                <rect key="frame" x="26" y="534" width="362" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5fU-aB-wBT"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1554,34 +1615,6 @@ Soil
                                 <rect key="frame" x="26" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-gf-8FG">
-                                <rect key="frame" x="0.0" y="195" width="414" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Ecology
-Biology
-Physics
-Chemistry
-Zoology
-Mineralogy
-Oceanology
-Limnology
-Soil science
-Geology
-
-
-
-
-
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLL-6d-yVn">
                                 <rect key="frame" x="43" y="146" width="152" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1594,6 +1627,30 @@ Geology
                                     <segue destination="PvO-fR-Clx" kind="show" id="Q7U-mE-8JI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-gf-8FG">
+                                <rect key="frame" x="51" y="193" width="313" height="305"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Ecology
+Biology
+Physics
+Chemistry
+Zoology
+Mineralogy
+Oceanology
+Limnology
+Soil science
+Geology</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="25" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6mR-V0-gQd"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1636,17 +1693,23 @@ Geology
                                 <rect key="frame" x="34" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qie-zV-Dtv">
-                                <rect key="frame" x="20" y="168" width="382" height="453"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qie-zV-Dtv">
+                                <rect key="frame" x="51" y="146" width="313" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Developmental Psychology
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Developmental Psychology
 Health Psychology
 Brain functions 
 Brain behaviors 
-Waves and signs theory
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+Waves and signs theory</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1657,7 +1720,7 @@ Waves and signs theory
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xix-zO-6WM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4263" y="-664"/>
+            <point key="canvasLocation" x="4262.3188405797109" y="-664.28571428571422"/>
         </scene>
         <!--psych adv topics-->
         <scene sceneID="RSJ-hV-YJM">
@@ -1679,24 +1742,6 @@ Waves and signs theory
                                     <segue destination="hZA-Od-Xli" kind="show" id="gG6-us-vDY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUP-0H-6xn">
-                                <rect key="frame" x="16" y="269" width="382" height="453"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text"> Neuropsychology
- Experimental Psychology
- Industrial Psychology
-
-
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skills" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-Gg-V4a">
                                 <rect key="frame" x="30" y="494" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1709,6 +1754,23 @@ Waves and signs theory
                                 <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUP-0H-6xn">
+                                <rect key="frame" x="51" y="193" width="313" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content"> Neuropsychology
+ Experimental Psychology
+ Industrial Psychology</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="29" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fmq-fR-K6r"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1717,7 +1779,7 @@ Waves and signs theory
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4H-AN-rcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4943" y="-652"/>
+            <point key="canvasLocation" x="4942.0289855072469" y="-652.23214285714278"/>
         </scene>
         <!--ES VC-->
         <scene sceneID="N6z-QE-BeS">
@@ -1727,6 +1789,10 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="ACS-gq-YSa">
+                                <rect key="frame" x="-119" y="240" width="652" height="705"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Environmental Sciences" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-c4-Ugp">
                                 <rect key="frame" x="53" y="45" width="307" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1761,7 +1827,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNP-ZV-z6J">
-                                <rect key="frame" x="60" y="395" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1775,7 +1841,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQB-y4-5x5">
-                                <rect key="frame" x="59" y="550" width="294" height="108"/>
+                                <rect key="frame" x="59" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1806,6 +1872,10 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (3)" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-3q-oDP">
+                                <rect key="frame" x="-27" y="457" width="565" height="555"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Economics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-D7-12C">
                                 <rect key="frame" x="53" y="55" width="227" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1827,7 +1897,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q17-mJ-4Uu">
-                                <rect key="frame" x="60" y="221" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1840,7 +1910,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-kV-cRa">
-                                <rect key="frame" x="60" y="543" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1853,7 +1923,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-N8-86C">
-                                <rect key="frame" x="60" y="378" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1884,6 +1954,10 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (2)" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-XN-q34">
+                                <rect key="frame" x="-78" y="440" width="712" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Psychology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW9-0x-rpk">
                                 <rect key="frame" x="53" y="55" width="237" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1905,7 +1979,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qw9-kM-zcf">
-                                <rect key="frame" x="60" y="221" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1918,7 +1992,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-YQ-lP4">
-                                <rect key="frame" x="60" y="543" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1931,7 +2005,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-sc-kz7">
-                                <rect key="frame" x="60" y="378" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1962,6 +2036,10 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (1)" translatesAutoresizingMaskIntoConstraints="NO" id="B6T-y7-MhI">
+                                <rect key="frame" x="-6" y="335" width="648" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jF-su-Ya8">
                                 <rect key="frame" x="53" y="55" width="157" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1983,7 +2061,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fZ-ZD-xPI">
-                                <rect key="frame" x="60" y="233" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1996,7 +2074,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKA-8z-eZV">
-                                <rect key="frame" x="60" y="555" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2009,7 +2087,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-N7-3xp">
-                                <rect key="frame" x="60" y="390" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2040,6 +2118,10 @@ Waves and signs theory
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-bd-ngD">
+                                <rect key="frame" x="-196" y="304" width="679" height="657"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-wU-bi9">
                                 <rect key="frame" x="53" y="55" width="148" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2061,7 +2143,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOJ-MC-nB3">
-                                <rect key="frame" x="60" y="220" width="294" height="108"/>
+                                <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2074,7 +2156,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKu-YI-Bpr">
-                                <rect key="frame" x="60" y="542" width="294" height="108"/>
+                                <rect key="frame" x="60" y="506" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2087,7 +2169,7 @@ Waves and signs theory
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaB-fZ-W9N">
-                                <rect key="frame" x="60" y="377" width="294" height="108"/>
+                                <rect key="frame" x="60" y="341" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -2138,25 +2220,30 @@ Waves and signs theory
                                     <segue destination="inT-xt-IQL" kind="show" id="S26-MA-U6P"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-of-yYd">
-                                <rect key="frame" x="16" y="168" width="382" height="453"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Industrial revolution
-Colonization
-Decolonization
-World wars
-Redrawing of  National boundaries
-Political philosophies 
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core his" translatesAutoresizingMaskIntoConstraints="NO" id="pgf-sV-fq2">
                                 <rect key="frame" x="30" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-of-yYd">
+                                <rect key="frame" x="55" y="146" width="313" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Industrial revolution
+Colonization
+Decolonization
+World wars
+Redrawing of  National boundaries
+Political philosophies </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jSL-0i-kEk"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2165,7 +2252,7 @@ Political philosophies
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXc-Vp-RSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6322" y="13"/>
+            <point key="canvasLocation" x="6321.739130434783" y="12.723214285714285"/>
         </scene>
         <!--adv topics history-->
         <scene sceneID="2cj-6d-5IN">
@@ -2187,22 +2274,6 @@ Political philosophies
                                     <segue destination="inT-xt-IQL" kind="show" id="mHw-fj-Bo9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viv-Ee-fbo">
-                                <rect key="frame" x="16" y="168" width="382" height="453"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Civil War
-Cold War
-Great Depression
-Holocaust
-Inventions &amp; Science
-Mexican-American War
-Natural Disasters &amp; Environment
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adv his" translatesAutoresizingMaskIntoConstraints="NO" id="uww-A3-9Po">
                                 <rect key="frame" x="30" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2215,6 +2286,29 @@ Natural Disasters &amp; Environment
                                 <color key="textColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viv-Ee-fbo">
+                                <rect key="frame" x="16" y="193" width="382" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Civil War
+Cold War
+Great Depression
+Holocaust
+Inventions &amp; Science
+Mexican-American War
+Natural Disasters &amp; Environment
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sxz-bm-8sw"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2223,7 +2317,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzM-pm-z4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7103" y="38"/>
+            <point key="canvasLocation" x="7102.898550724638" y="37.5"/>
         </scene>
         <!--Indoor VC-->
         <scene sceneID="yBP-6e-8ci">
@@ -2233,6 +2327,14 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (4)" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-s7-JPt">
+                                <rect key="frame" x="-143" y="365" width="611" height="498"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (3)" translatesAutoresizingMaskIntoConstraints="NO" id="rds-p5-f3v">
+                                <rect key="frame" x="156" y="20" width="366" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-hM-427">
                                 <rect key="frame" x="53" y="55" width="137" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2391,7 +2493,7 @@ Natural Disasters &amp; Environment
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX2-YG-4eB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jN6-ka-L6E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2177" y="1873"/>
+            <point key="canvasLocation" x="-2178.2608695652175" y="1872.9910714285713"/>
         </scene>
         <!--Outdoor VC-->
         <scene sceneID="yAb-Tu-gXR">
@@ -2401,6 +2503,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (1)" translatesAutoresizingMaskIntoConstraints="NO" id="2hP-qN-iDu">
+                                <rect key="frame" x="117" y="0.0" width="366" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Outdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-o0-YWP">
                                 <rect key="frame" x="53" y="55" width="174" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2497,6 +2603,10 @@ Natural Disasters &amp; Environment
                                     <action selector="hydro:" destination="eRQ-cz-kJL" eventType="touchUpInside" id="njD-Y9-HqP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="UUN-ax-nrA">
+                                <rect key="frame" x="-86" y="379" width="587" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yiP-b3-nzd"/>
                         <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2506,7 +2616,7 @@ Natural Disasters &amp; Environment
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oit-B5-RSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="vN0-YB-jne" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1378" y="1873"/>
+            <point key="canvasLocation" x="-1378.2608695652175" y="1872.9910714285713"/>
         </scene>
         <!--Courses VC-->
         <scene sceneID="K8G-Wh-50L">
@@ -2516,6 +2626,14 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (3)" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-zF-4V0">
+                                <rect key="frame" x="-115" y="-125" width="540" height="537"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-dG-lo6">
+                                <rect key="frame" x="43" y="478" width="451" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbs-rq-s6C">
                                 <rect key="frame" x="53" y="55" width="165" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2654,7 +2772,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KX5-TT-3RX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="1873"/>
+            <point key="canvasLocation" x="-578.26086956521749" y="1872.9910714285713"/>
         </scene>
         <!--Activities VC-->
         <scene sceneID="6SF-9a-Lkf">
@@ -2664,6 +2782,14 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="ffW-8G-z8F">
+                                <rect key="frame" x="119" y="525" width="389" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (3)" translatesAutoresizingMaskIntoConstraints="NO" id="Gyc-vg-l9K">
+                                <rect key="frame" x="-164" y="-172" width="392" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-zR-yaa">
                                 <rect key="frame" x="53" y="55" width="191" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2679,10 +2805,10 @@ Natural Disasters &amp; Environment
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Indoor →                                      ">
+                                        <fragment content="Indoor →                                     ">
                                             <attributes>
                                                 <color key="NSColor" red="0.40000003579999999" green="0.58039218189999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <font key="NSFont" size="20" name="MontserratRoman-SemiBold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -2765,6 +2891,14 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (4)" translatesAutoresizingMaskIntoConstraints="NO" id="pPn-wc-2N5">
+                                <rect key="frame" x="149" y="551" width="498" height="425"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="MS2-cx-086">
+                                <rect key="frame" x="-152" y="112" width="566" height="539"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-PT-OOI">
                                 <rect key="frame" x="53" y="55" width="213" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2774,12 +2908,20 @@ Natural Disasters &amp; Environment
                                 <color key="highlightedColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jY-L5-qqI">
-                                <rect key="frame" x="60" y="204" width="294" height="108"/>
+                                <rect key="frame" x="36" y="188" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Questions →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Questions →">
+                                            <attributes>
+                                                <color key="NSColor" red="0.39607840779999998" green="0.58431375029999999" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -2787,12 +2929,20 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkw-hk-TvD">
-                                <rect key="frame" x="60" y="379" width="294" height="108"/>
+                                <rect key="frame" x="36" y="378" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Apps →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Apps →">
+                                            <attributes>
+                                                <color key="NSColor" red="0.39607840779999998" green="0.58431375029999999" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.98201662300000003" green="0.95858067270000002" blue="0.47047227619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -2813,12 +2963,20 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxP-ec-2al">
-                                <rect key="frame" x="60" y="566" width="294" height="108"/>
+                                <rect key="frame" x="36" y="572" width="342" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Subject Wise →" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Subject Wise →">
+                                            <attributes>
+                                                <color key="NSColor" red="0.39607840779999998" green="0.58431375029999999" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -2833,7 +2991,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6O-uI-thw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="958"/>
+            <point key="canvasLocation" x="1444.9275362318842" y="957.58928571428567"/>
         </scene>
         <!--ES Apps-->
         <scene sceneID="J0m-Ws-MLz">
@@ -2843,6 +3001,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="NGY-ys-LwC">
+                                <rect key="frame" x="-207" y="289" width="820" height="886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Environmental Sciences" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfN-Wc-0zf">
                                 <rect key="frame" x="53" y="45" width="307" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2911,7 +3073,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMf-HK-DOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="751"/>
+            <point key="canvasLocation" x="2760.8695652173915" y="750.66964285714278"/>
         </scene>
         <!--Eco Apps-->
         <scene sceneID="l4c-eb-2ch">
@@ -2921,6 +3083,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="MDy-S5-cyP">
+                                <rect key="frame" x="-159" y="300" width="652" height="705"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Economics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEq-J8-Uzj">
                                 <rect key="frame" x="53" y="55" width="227" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2989,7 +3155,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiV-3S-wjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3516" y="751"/>
+            <point key="canvasLocation" x="3515.9420289855075" y="750.66964285714278"/>
         </scene>
         <!--Psych Apps-->
         <scene sceneID="bRn-hD-iop">
@@ -3059,6 +3225,10 @@ Natural Disasters &amp; Environment
                                     <action selector="mindHack:" destination="YIO-7o-zTj" eventType="touchUpInside" id="bcK-u6-1Ug"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (1)" translatesAutoresizingMaskIntoConstraints="NO" id="G8R-vG-xwi">
+                                <rect key="frame" x="-132" y="229" width="648" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ue3-fI-eFn"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -3067,7 +3237,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1S8-aM-5Le" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4225" y="751"/>
+            <point key="canvasLocation" x="4224.6376811594209" y="750.66964285714278"/>
         </scene>
         <!--Bio Apps-->
         <scene sceneID="0ki-wR-YF2">
@@ -3077,6 +3247,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Ds7-5W-LPu">
+                                <rect key="frame" x="-126" y="306" width="712" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ow-7B-t4I">
                                 <rect key="frame" x="53" y="55" width="157" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3145,7 +3319,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58v-gS-SH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4932" y="751"/>
+            <point key="canvasLocation" x="4931.884057971015" y="750.66964285714278"/>
         </scene>
         <!--History Apps-->
         <scene sceneID="eLq-mu-329">
@@ -3215,6 +3389,10 @@ Natural Disasters &amp; Environment
                                     <segue destination="inT-xt-IQL" kind="show" id="a9P-WG-qcm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (3)" translatesAutoresizingMaskIntoConstraints="NO" id="nZM-lI-Z6I">
+                                <rect key="frame" x="-75" y="300" width="565" height="555"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9qE-7Q-XMu"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -3223,7 +3401,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7Z-iu-omC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5629" y="751"/>
+            <point key="canvasLocation" x="5628.985507246377" y="750.66964285714278"/>
         </scene>
         <!--questions VC-->
         <scene sceneID="mnq-gT-N8X">
@@ -3233,6 +3411,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (5)" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-1v-fJF">
+                                <rect key="frame" x="-263" y="17" width="1147" height="856"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-nR-e4Z">
                                 <rect key="frame" x="53" y="55" width="209" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3254,7 +3436,7 @@ Natural Disasters &amp; Environment
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-1X-ywi">
-                                <rect key="frame" x="62" y="146" width="290" height="70"/>
+                                <rect key="frame" x="62" y="160" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -3263,11 +3445,12 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="brainly:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="BW4-9U-yY9"/>
                                     <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="ew7-NR-8oZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uva-kc-vOn">
-                                <rect key="frame" x="62" y="224" width="290" height="70"/>
+                                <rect key="frame" x="62" y="238" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -3278,10 +3461,11 @@ Natural Disasters &amp; Environment
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Rjv-Ib-brz"/>
+                                    <action selector="socratic:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="HAE-3u-yLv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPb-Ec-lNS">
-                                <rect key="frame" x="62" y="302" width="290" height="70"/>
+                                <rect key="frame" x="62" y="316" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -3290,11 +3474,12 @@ Natural Disasters &amp; Environment
                                     <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="byjus:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="s5i-QE-ABR"/>
                                     <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="4pf-pR-kuZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cV-Zs-gbe">
-                                <rect key="frame" x="62" y="380" width="290" height="70"/>
+                                <rect key="frame" x="62" y="394" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -3305,10 +3490,27 @@ Natural Disasters &amp; Environment
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Nzq-xt-Mon"/>
+                                    <action selector="qoura:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="OVR-at-JjS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KY-bs-kty">
+                                <rect key="frame" x="62" y="550" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TeachNext" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="DXA-SA-wNa"/>
+                                    <action selector="qoura:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="IKX-En-oNR"/>
+                                    <action selector="tesch:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="IfH-ai-1Er"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE5-if-Gi7">
-                                <rect key="frame" x="62" y="458" width="290" height="70"/>
+                                <rect key="frame" x="62" y="472" width="290" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -3319,48 +3521,7 @@ Natural Disasters &amp; Environment
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Euq-Qc-xne"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ij-OjS">
-                                <rect key="frame" x="62" y="536" width="290" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Skillshare" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="skillShare:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="USE-en-9N6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9O-Wv-Vl5">
-                                <rect key="frame" x="62" y="614" width="290" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="freeCodeCamp" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="freeCodeCamp:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="cKz-fZ-Wxn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAH-gj-mNo">
-                                <rect key="frame" x="62" y="692" width="290" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Invest In Girls" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
-                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="investGirls:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="vws-Va-qOf"/>
+                                    <action selector="thebrits:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="W4w-HL-5i2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3371,7 +3532,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUx-IY-hzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="1658"/>
+            <point key="canvasLocation" x="1063.768115942029" y="1657.3660714285713"/>
         </scene>
         <!--apps VC-->
         <scene sceneID="tlv-7Z-WRD">
@@ -3381,6 +3542,10 @@ Natural Disasters &amp; Environment
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (3)" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-Zs-ai1">
+                                <rect key="frame" x="-105" y="129" width="654" height="872"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebE-jZ-REK">
                                 <rect key="frame" x="53" y="55" width="106" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3401,6 +3566,85 @@ Natural Disasters &amp; Environment
                                     <segue destination="hA8-qX-NGJ" kind="show" id="Q3T-sN-6O0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-es-xk3">
+                                <rect key="frame" x="62" y="156" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Photomath" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="brainly:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="Ok9-mV-4Pf"/>
+                                    <action selector="kodeWithKlossy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="CyJ-IE-f4o"/>
+                                    <action selector="photomath:" destination="xjL-tX-p3z" eventType="touchUpInside" id="GVQ-L5-5ue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjn-uy-q6x">
+                                <rect key="frame" x="62" y="234" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Duolingo" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="duobird:" destination="xjL-tX-p3z" eventType="touchUpInside" id="n8v-XD-yW8"/>
+                                    <action selector="girlsWhoCode:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="hv6-WE-ihk"/>
+                                    <action selector="socratic:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="Zhy-C4-eOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xa-sK-LtX">
+                                <rect key="frame" x="62" y="312" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Quizlet" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="byjus:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="DQe-wa-n9e"/>
+                                    <action selector="quizlet:" destination="xjL-tX-p3z" eventType="touchUpInside" id="3op-3z-af7"/>
+                                    <action selector="udemy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="Cxq-C0-ewR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De0-Se-PSG">
+                                <rect key="frame" x="62" y="390" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Self Study Planner" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="edX:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="4Nt-5S-Ej7"/>
+                                    <action selector="qoura:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="93z-Ah-VPW"/>
+                                    <action selector="selfS:" destination="xjL-tX-p3z" eventType="touchUpInside" id="Ye8-gz-RLU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqD-xd-Q5o">
+                                <rect key="frame" x="62" y="468" width="290" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96607059240000004" green="0.86851572990000003" blue="0.32139870520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Office Lens" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="MontserratRoman-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.39826411010000001" green="0.58117812869999996" blue="0.89023065570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.86666667460000002" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CodeCademy:" destination="Fe3-qJ-swj" eventType="touchUpInside" id="bcZ-Gz-sd6"/>
+                                    <action selector="office:" destination="xjL-tX-p3z" eventType="touchUpInside" id="BrJ-5O-W3o"/>
+                                    <action selector="selfS:" destination="xjL-tX-p3z" eventType="touchUpInside" id="izc-yr-CRP"/>
+                                    <action selector="thebrits:" destination="CUy-Bj-nqE" eventType="touchUpInside" id="qRC-Ye-E1Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NgW-H8-S08"/>
                         <color key="backgroundColor" red="0.74276620149999995" green="0.8372128606" blue="0.94511312250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -3410,7 +3654,7 @@ Natural Disasters &amp; Environment
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyJ-pv-ihJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="1663"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="1662.7232142857142"/>
         </scene>
         <!--eco core topics-->
         <scene sceneID="64Z-sh-VME">
@@ -3444,10 +3688,12 @@ Natural Disasters &amp; Environment
                                 <rect key="frame" x="30" y="549" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-eZ-idk">
-                                <rect key="frame" x="20" y="222" width="382" height="286"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-eZ-idk">
+                                <rect key="frame" x="51" y="146" width="313" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Government intervention 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Government intervention 
 Aggregate Demand 
 Aggregate Supply
 Tariffs 
@@ -3464,8 +3710,13 @@ Elasticities
 
 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -3510,10 +3761,12 @@ Elasticities
                                 <rect key="frame" x="26" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-0r-MOi">
-                                <rect key="frame" x="16" y="238" width="382" height="190"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-0r-MOi">
+                                <rect key="frame" x="16" y="168" width="382" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Calculations 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Calculations 
 Marshall and J curve 
 Gini coefficient 
 Oligopoly 
@@ -3526,8 +3779,13 @@ Perfect and Imperfect competition
 
 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="26" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -3568,25 +3826,31 @@ Perfect and Imperfect competition
                                     <segue destination="8Kl-KM-AEh" kind="show" id="Ymy-2Z-pAE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csk-uM-hiW">
-                                <rect key="frame" x="16" y="168" width="382" height="453"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core bio" translatesAutoresizingMaskIntoConstraints="NO" id="eTS-MQ-LRt">
+                                <rect key="frame" x="30" y="534" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Cell Biology
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csk-uM-hiW">
+                                <rect key="frame" x="27" y="146" width="367" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Cell Biology
 Molecular Biology
 Genetics
 Ecology
 Evolution and Biodiversity
 Human Physiology
-
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="core bio" translatesAutoresizingMaskIntoConstraints="NO" id="eTS-MQ-LRt">
-                                <rect key="frame" x="30" y="534" width="362" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ntf-sS-MdM"/>
                         <color key="backgroundColor" red="0.74117654560000001" green="0.83529412749999998" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -3595,7 +3859,7 @@ Human Physiology
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGY-Rh-hwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4907" y="1418"/>
+            <point key="canvasLocation" x="4905.7971014492759" y="1417.6339285714284"/>
         </scene>
         <!--bio adv topics-->
         <scene sceneID="Rt7-8s-PWn">
@@ -3629,27 +3893,25 @@ Human Physiology
                                 <rect key="frame" x="30" y="514" width="362" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbZ-SO-qai">
-                                <rect key="frame" x="16" y="249" width="382" height="502"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbZ-SO-qai">
+                                <rect key="frame" x="20" y="188" width="382" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Statistics 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Statistics 
 Biochemistry Serial dilutions
 Chemistry of Biomolecules
 Molecular Biology Analysis 
 DNA fingerprinting
 Animal anatomy 
-Histology 
-
-
-
-
-
-
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+Histology </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.40392160420000001" green="0.58431375029999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="25" name="MontserratRoman-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -3670,6 +3932,10 @@ Histology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (4)" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-kG-n4R">
+                                <rect key="frame" x="-73" y="248" width="812" height="741"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E9-pB-ozD">
                                 <rect key="frame" x="53" y="55" width="271" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3738,7 +4004,7 @@ Histology
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vu8-CU-Yea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1387" y="-1017"/>
+            <point key="canvasLocation" x="1386.9565217391305" y="-1017.1875"/>
         </scene>
         <!--English Apps-->
         <scene sceneID="lRN-Ls-E5R">
@@ -3748,6 +4014,10 @@ Histology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern (3)" translatesAutoresizingMaskIntoConstraints="NO" id="Lfy-bN-EH1">
+                                <rect key="frame" x="-194" y="276" width="738" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKo-vo-EIP">
                                 <rect key="frame" x="43" y="99" width="202" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3826,6 +4096,10 @@ Histology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="dSF-Wp-CpD">
+                                <rect key="frame" x="-69" y="384" width="679" height="657"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L67-9M-bx8">
                                 <rect key="frame" x="43" y="99" width="203" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3904,6 +4178,10 @@ Histology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (4)" translatesAutoresizingMaskIntoConstraints="NO" id="x4N-1v-VA4">
+                                <rect key="frame" x="-65" y="291" width="820" height="886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chemistry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X06-iP-mVn">
                                 <rect key="frame" x="53" y="55" width="214" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3989,6 +4267,10 @@ Histology
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pats (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-G8-LDY">
+                                <rect key="frame" x="-115" y="306" width="712" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z6-rl-Ipu">
                                 <rect key="frame" x="60" y="184" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4061,23 +4343,32 @@ Histology
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="u3k-pk-Acc"/>
+        <segue reference="EBt-d7-G0R"/>
+        <segue reference="asX-aZ-Pba"/>
+        <segue reference="Um9-rs-MXe"/>
+        <segue reference="nvX-5H-9Zg"/>
+        <segue reference="4j0-Xh-XlC"/>
+        <segue reference="p1C-sb-2Es"/>
+        <segue reference="7OW-qH-DZb"/>
         <segue reference="Q3T-sN-6O0"/>
-        <segue reference="L7E-IZ-zrQ"/>
-        <segue reference="S26-MA-U6P"/>
-        <segue reference="04c-QU-oOS"/>
-        <segue reference="b3T-ah-eTX"/>
-        <segue reference="Hci-yt-RTY"/>
-        <segue reference="vEu-a5-AUZ"/>
-        <segue reference="bUB-Gc-2Vr"/>
-        <segue reference="aCB-Ih-PCz"/>
-        <segue reference="Ul5-xJ-WYF"/>
-        <segue reference="lcT-Ho-kzx"/>
-        <segue reference="1qM-Nq-ige"/>
+        <segue reference="olU-MA-lvU"/>
+        <segue reference="a9P-WG-qcm"/>
+        <segue reference="H17-QU-amD"/>
+        <segue reference="obP-Zf-fwJ"/>
+        <segue reference="twp-Ta-1SZ"/>
+        <segue reference="3QP-M5-xvR"/>
+        <segue reference="HyP-9Y-uqL"/>
+        <segue reference="w51-ds-P2L"/>
+        <segue reference="t2B-iG-6HN"/>
+        <segue reference="MS6-qo-IR5"/>
+        <segue reference="nWY-j8-gvK"/>
         <segue reference="3Au-QX-dGw"/>
-        <segue reference="Hv2-x6-E3a"/>
+        <segue reference="CSV-fV-e9H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Female-kayaking-in-cavernous-river" width="1109" height="614"/>
+        <image name="Image-2" width="750" height="1284"/>
         <image name="adv bio" width="571" height="316"/>
         <image name="adv chem-1" width="740" height="416"/>
         <image name="adv cs" width="636" height="315"/>
@@ -4099,15 +4390,13 @@ Histology
         <image name="core physics" width="1280" height="853"/>
         <image name="coursws" width="880" height="550"/>
         <image name="indoor-activities-for-preschoolers-865x577" width="865" height="577"/>
-        <image name="pattern" width="1080" height="1080"/>
-        <image name="pattern (1)" width="1080" height="1080"/>
-        <image name="pattern (2)" width="1080" height="1080"/>
+        <image name="pats (1)" width="1080" height="1080"/>
+        <image name="pats (2)" width="1080" height="1080"/>
+        <image name="pats (3)" width="1080" height="1080"/>
+        <image name="pats (4)" width="1080" height="1080"/>
+        <image name="pattern (3)" width="1080" height="1080"/>
+        <image name="pattern (4)" width="1080" height="1080"/>
+        <image name="pattern (5)" width="1080" height="1080"/>
         <image name="skills" width="777" height="437"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
